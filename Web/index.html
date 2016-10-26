@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blue Booth Fairy</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="styles.css"/>
+	<link rel="stylesheet" href="mat_des.css"/>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
+	<a class="navbar-brand" href="#">Blue Booth Fairy</a>
+	<div id="navbar">
+		<button type="button" class="btn btn-sm btn-outline-secondary float-xs-right">logout</button>
+		<div class="toggle-btn">
+			<a href="#">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+
+
+		</div>
+	</div>
+</nav>
+
+<div class="main-content">
+
+	<div class="col sidebar">
+		<div>
+			<div class="sidebar-header">
+				<div class="sidebar-header-filter">
+					<div class="profile-container">
+						<div id="profile_picture">
+							<img id="" src="assets/jars.png">
+						</div>
+
+
+						<div id="profile_details">
+							<h4>Alyssa Yu</h4>
+							<span>Voila! Jars Plc Inc.</span>
+							<span>alyssayu@voilajars.com</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<ul class="sidebar-nav">
+				<a href="#"><li class="active"><img class="sidebar-icon" src="assets/ic_home_active.svg"/>Home</li></a>
+				<a href="#"><li><img class="sidebar-icon" src="assets/ic_productlist.svg"/>Product List</li></a>
+				<a href="#"><li><img class="sidebar-icon" src="assets/ic_email.svg"/>Email History</li></a>
+				<a href="#"><li><img class="sidebar-icon" src="assets/ic_buyermap.svg"/>Buyer Map</li></a>
+				<a href="#"><li><img class="sidebar-icon" src="assets/ic_analytics.svg"/>Analytics</li></a>
+				<a href="#"><li><img class="sidebar-icon" src="assets/ic_settings.svg"/>Settings</li></a>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<div class="col content-container">
+		<div class="content">
+			<div class="card">
+				<div class="card-header section">
+					Reach out to your buyers
+				</div>
+				<div class="card-content section">
+					<div style="font-size: 18px">Send an email to buyers who are interested in:</div>
+					<div class="row" style="margin-top: 20px">
+						<div id="buyer_checklist" class="form-check col-md-7">
+						</div>
+						<div class="col-md-5">
+							<div class="circle-boxes">
+								<div class="circle-container">
+									<div class="circle">
+										<h1 id="num_recipients">0</h1>
+										<span>recipients</span>
+									</div>
+								</div>
+								<a href="#">
+									<div class="circle-container">
+										<div id="btn_compose" class="circle">
+											<img src="assets/ic_plane.svg"/>
+											<span>Create Mail</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header section">
+					Interested Buyers
+				</div>
+				<div class="card-content section">
+					<div class="table-responsive">
+						<table class="table" >
+							<thead>
+							<tr>
+								<th> </th>
+								<th>Name</th>
+								<th>Email</th>
+								<th>Contact No.</th>
+								<th class="span8">Subscribed Products</th>
+							</tr>
+							</thead>
+							<tbody id="buyer_table">
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	var CBOX_ALLBUYERS = "CBOX_ALLBUYERS";
+	var CBOX_FAVEBUYERS = "CBOX_FAVEBUYERS";
+	var fave_count = 0;
+	var recipients = 0;
+	var products = [
+		"Belgian Fudge 3 step Jar Cake",
+		"Red Velvet 3 step Jar Cake",
+		"Peanut Butter 3 step Jar Cake"
+	];
+
+	var buyers = [
+		[false, "Kimmy", "kimmy@yahoo.com", "222-8080", "Red Velvet 3 step Jar Cake"],
+		[false, "Kaviar Drimms", "kaviay@yahoo.com", "(09)232-9900", "Red Velvet 3 step Jar Cake"],
+		[true, "Kim Kardashy", "kimkardashy@yahoo.com", "(63)286236", "Red Velvet 3 step Jar Cake<br>Belgian Fudge 3 step Jar Cake"],
+		[false, "Stewart Mittle", "stweut@yahoo.com", "99912226", "Belgian Fudge 3 step Jar Cake"],
+		[false, "Barnie-San", "barni@yahoo.com", "5513808", "Peanut Butter 3 step Jar Cake"],
+		[false, "Kimmy", "kimmy1@yahoo.com", "222-8080", "Red Velvet 3 step Jar Cake"],
+		[true, "Kaviar Drimms", "kavia1y@yahoo.com", "(09)232-9900", "Red Velvet 3 step Jar Cake"],
+		[false, "Kim Kardashy", "kimkardash1y@yahoo.com", "(63)286236", "Red Velvet 3 step Jar Cake<br>Belgian Fudge 3 step Jar Cake"],
+		[false, "Stewart Mittle", "s1tweut@yahoo.com", "99912226", "Belgian Fudge 3 step Jar Cake"],
+		[false, "Barnie-San", "esaa@yahoo.com", "5513808", "Peanut Butter 3 step Jar Cake"]
+	];
+
+	var checkboxHTML = "";
+	for(i = 0; i < products.length + 2; i++){
+		var value;
+		var label;
+		var id;
+
+		if(i == products.length){
+			value = CBOX_FAVEBUYERS;
+			label = "All favorite buyers";
+			id = "allfaves";
+		}else if(i == products.length + 1){
+			value = CBOX_ALLBUYERS;
+			label = "All buyers";
+			id = "allbuyers";
+		}else{
+			label = products[i];
+			value = label;
+			id = i;
+		}
+
+		var html = '<label><input id=checkbox_'+ id +' class="box" type="checkbox" value="'+ value +'"><span>'+ label +'</span></label>';
+		checkboxHTML += html;
+	}
+
+	var tableHTML = "";
+	for(i = 0; i < buyers.length; i++){
+		var isFave = buyers[i][0];
+		var name = buyers[i][1];
+		var email = buyers[i][2];
+		var contact = buyers[i][3];
+		var products = buyers[i][4];
+		var active = "";
+
+		if(isFave){
+			active = " active";
+		}
+
+		var html = "<tr><td id='star_"+i+"'><img class='img_fave"+ active +"'/></td><td>"+name+"</td><td>"+email+"</td><td>"+contact+"</td><td>"+products+"</td></tr>";
+		tableHTML += html;
+	}
+
+	$('#buyer_checklist').html(checkboxHTML);
+	$('#buyer_table').html(tableHTML);
+
+	var recipientList = [];
+
+	function getValueOfProduct(product){
+		if(product == CBOX_ALLBUYERS || product == CBOX_FAVEBUYERS){
+			return product;
+		}
+
+		var buyerSum = 0;
+		for(i = 0; i < buyers.length; i++){
+			if(buyers[i][4].indexOf(product) != -1){
+				buyerSum++;
+				if(recipientList.indexOf(buyers[i][4]) == -1){
+					recipientList.push(buyers[i][4]);
+				}
+			}
+		}
+		return buyerSum;
+	}
+
+	$('#buyer_checklist .box').change(function(){
+		var value = $(this).val();
+		if(value == CBOX_ALLBUYERS){
+			if($(this).is(':checked'))
+				checkAllBoxes(true);
+			else{
+				checkAllBoxes(false);
+			}
+		}
+
+		if(!$(this).is(':checked')){
+			uncheckAllBuyers();
+		}
+
+		$('#num_recipients').html(getValue());
+	});
+
+	function checkAllBoxes(doCheck){
+		$('#buyer_checklist .box').each(function() {
+			this.checked = doCheck;
+		});
+	}
+
+	function uncheckAllBuyers(){
+		$('#buyer_checklist .box').each(function() {
+			if($(this).val() == CBOX_ALLBUYERS){
+				this.checked = false;
+				return;
+			}
+		});
+	}
+
+	function getValue(){
+		var total = 0;
+		$('#buyer_checklist .box').each(function() {
+			var value = getValueOfProduct($(this).val());
+			if(this.checked){
+				if(value > 0){
+					total += value;
+				}else if(value == CBOX_FAVEBUYERS){
+					total += getFaveCount();
+				}
+			}
+		});
+		return total;
+	}
+
+	$(".img_fave").click(function(){
+		$(this).toggleClass('active');
+	});
+
+	$("#btn_compose").click(function(){
+		var emails = getCheckedRecipients();
+		var html = "";
+		for(i = 0; i < emails.length; i++){
+			html += emails;
+			if(i+1 < emails.length){
+				html += ";";
+			}
+		}
+		window.location.href = "mailto:" + html;
+	});
+
+	function getCheckedRecipients(){
+		var email = [];
+		$('#buyer_checklist .box').each(function() {
+			if(this.checked){
+				if(this.id != "checkbox_allbuyers"){
+					var id = this.id.split('checkbox_')[1];
+					console.log(id);
+
+					if(id != "allfaves"){
+						var productIndex = parseInt(id);
+						var filter = products[productIndex][0];
+						for(i = 0; i < buyers.length; i++){
+							if(buyers[i][4].indexOf(filter) != -1){
+								if(email.indexOf(buyers[i][2]) == -1){
+									email.push(buyers[i][2]);
+								}
+							}
+						}
+					}
+				}
+			}
+		});
+		return email;
+	}
+
+	function getFaveCount(){
+		return 3;
+	}
+
+</script>
+<script>
+	$(document).ready(function () {
+		$(".toggle-btn a").on('click', function () {
+			$(this).toggleClass("active");
+			$(".sidebar").toggleClass("active-menu");
+		});
+	});
+</script>
+</html>
+

@@ -1,0 +1,1092 @@
+[
+    {
+        "outputFile": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 68,
+                    "endOffset": 119
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 124,
+                    "endLine": 9,
+                    "endColumn": 12,
+                    "endOffset": 530
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\values-v21\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 535,
+                    "endColumn": 90,
+                    "endOffset": 621
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 626,
+                    "endColumn": 102,
+                    "endOffset": 724
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 729,
+                    "endColumn": 102,
+                    "endOffset": 827
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 832,
+                    "endColumn": 104,
+                    "endOffset": 932
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 937,
+                    "endColumn": 106,
+                    "endOffset": 1039
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1044,
+                    "endColumn": 108,
+                    "endOffset": 1148
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1153,
+                    "endColumn": 108,
+                    "endOffset": 1257
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1262,
+                    "endColumn": 108,
+                    "endOffset": 1366
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1371,
+                    "endColumn": 108,
+                    "endOffset": 1475
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1480,
+                    "endColumn": 108,
+                    "endOffset": 1584
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1589,
+                    "endColumn": 106,
+                    "endOffset": 1691
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1696,
+                    "endColumn": 102,
+                    "endOffset": 1794
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1799,
+                    "endColumn": 118,
+                    "endOffset": 1913
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1918,
+                    "endLine": 24,
+                    "endColumn": 12,
+                    "endOffset": 2068
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2073,
+                    "endLine": 26,
+                    "endColumn": 12,
+                    "endOffset": 2223
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2228,
+                    "endColumn": 104,
+                    "endOffset": 2328
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2333,
+                    "endColumn": 120,
+                    "endOffset": 2449
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2454,
+                    "endColumn": 100,
+                    "endOffset": 2550
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2555,
+                    "endLine": 31,
+                    "endColumn": 12,
+                    "endOffset": 2697
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2702,
+                    "endLine": 33,
+                    "endColumn": 12,
+                    "endOffset": 2838
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2843,
+                    "endColumn": 102,
+                    "endOffset": 2941
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2946,
+                    "endColumn": 118,
+                    "endOffset": 3060
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 3065,
+                    "endColumn": 106,
+                    "endOffset": 3167
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3172,
+                    "endColumn": 102,
+                    "endOffset": 3270
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3275,
+                    "endLine": 39,
+                    "endColumn": 12,
+                    "endOffset": 3417
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3422,
+                    "endLine": 41,
+                    "endColumn": 12,
+                    "endOffset": 3572
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 3577,
+                    "endLine": 43,
+                    "endColumn": 12,
+                    "endOffset": 3743
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 3748,
+                    "endLine": 45,
+                    "endColumn": 12,
+                    "endOffset": 3892
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 3897,
+                    "endLine": 47,
+                    "endColumn": 12,
+                    "endOffset": 4057
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 4062,
+                    "endLine": 49,
+                    "endColumn": 12,
+                    "endOffset": 4214
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 4219,
+                    "endLine": 51,
+                    "endColumn": 12,
+                    "endOffset": 4365
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 4370,
+                    "endColumn": 118,
+                    "endOffset": 4484
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 4489,
+                    "endLine": 54,
+                    "endColumn": 12,
+                    "endOffset": 4633
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 4638,
+                    "endLine": 56,
+                    "endColumn": 12,
+                    "endOffset": 4782
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 4787,
+                    "endColumn": 111,
+                    "endOffset": 4894
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 4899,
+                    "endColumn": 146,
+                    "endOffset": 5041
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 5046,
+                    "endLine": 60,
+                    "endColumn": 12,
+                    "endOffset": 5194
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 5199,
+                    "endLine": 62,
+                    "endColumn": 12,
+                    "endOffset": 5341
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 5346,
+                    "endColumn": 74,
+                    "endOffset": 5416
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 5421,
+                    "endColumn": 88,
+                    "endOffset": 5505
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 5510,
+                    "endColumn": 86,
+                    "endOffset": 5592
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 5597,
+                    "endColumn": 100,
+                    "endOffset": 5693
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 5698,
+                    "endLine": 110,
+                    "endColumn": 12,
+                    "endOffset": 8545
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 8550,
+                    "endLine": 113,
+                    "endColumn": 12,
+                    "endOffset": 8731
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 8736,
+                    "endLine": 157,
+                    "endColumn": 12,
+                    "endOffset": 11595
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 158,
+                    "startColumn": 4,
+                    "startOffset": 11600,
+                    "endLine": 160,
+                    "endColumn": 12,
+                    "endOffset": 11793
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 161,
+                    "startColumn": 4,
+                    "startOffset": 11798,
+                    "endLine": 162,
+                    "endColumn": 12,
+                    "endOffset": 11916
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 163,
+                    "startColumn": 4,
+                    "startOffset": 11921,
+                    "endLine": 164,
+                    "endColumn": 12,
+                    "endOffset": 12039
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 165,
+                    "startColumn": 4,
+                    "startOffset": 12044,
+                    "endLine": 166,
+                    "endColumn": 12,
+                    "endOffset": 12152
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 167,
+                    "startColumn": 4,
+                    "startOffset": 12157,
+                    "endLine": 169,
+                    "endColumn": 12,
+                    "endOffset": 12335
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 170,
+                    "startColumn": 4,
+                    "startOffset": 12340,
+                    "endLine": 171,
+                    "endColumn": 12,
+                    "endOffset": 12466
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 172,
+                    "startColumn": 4,
+                    "startOffset": 12471,
+                    "endLine": 174,
+                    "endColumn": 12,
+                    "endOffset": 12667
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 175,
+                    "startColumn": 4,
+                    "startOffset": 12672,
+                    "endColumn": 88,
+                    "endOffset": 12756
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 176,
+                    "startColumn": 4,
+                    "startOffset": 12761,
+                    "endColumn": 110,
+                    "endOffset": 12867
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 177,
+                    "startColumn": 4,
+                    "startOffset": 12872,
+                    "endColumn": 126,
+                    "endOffset": 12994
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 178,
+                    "startColumn": 4,
+                    "startOffset": 12999,
+                    "endColumn": 100,
+                    "endOffset": 13095
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 179,
+                    "startColumn": 4,
+                    "startOffset": 13100,
+                    "endColumn": 94,
+                    "endOffset": 13190
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 180,
+                    "startColumn": 4,
+                    "startOffset": 13195,
+                    "endColumn": 122,
+                    "endOffset": 13313
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 181,
+                    "startColumn": 4,
+                    "startOffset": 13318,
+                    "endColumn": 128,
+                    "endOffset": 13442
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 182,
+                    "startColumn": 4,
+                    "startOffset": 13447,
+                    "endColumn": 116,
+                    "endOffset": 13559
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 183,
+                    "startColumn": 4,
+                    "startOffset": 13564,
+                    "endLine": 185,
+                    "endColumn": 12,
+                    "endOffset": 13736
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 186,
+                    "startColumn": 4,
+                    "startOffset": 13741,
+                    "endColumn": 98,
+                    "endOffset": 13835
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 187,
+                    "startColumn": 4,
+                    "startOffset": 13840,
+                    "endLine": 188,
+                    "endColumn": 12,
+                    "endOffset": 13970
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 189,
+                    "startColumn": 4,
+                    "startOffset": 13975,
+                    "endLine": 190,
+                    "endColumn": 12,
+                    "endOffset": 14113
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 191,
+                    "startColumn": 4,
+                    "startOffset": 14118,
+                    "endLine": 192,
+                    "endColumn": 12,
+                    "endOffset": 14248
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 193,
+                    "startColumn": 4,
+                    "startOffset": 14253,
+                    "endLine": 194,
+                    "endColumn": 12,
+                    "endOffset": 14367
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 195,
+                    "startColumn": 4,
+                    "startOffset": 14372,
+                    "endLine": 198,
+                    "endColumn": 12,
+                    "endOffset": 14568
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 199,
+                    "startColumn": 4,
+                    "startOffset": 14573,
+                    "endLine": 200,
+                    "endColumn": 12,
+                    "endOffset": 14687
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 201,
+                    "startColumn": 4,
+                    "startOffset": 14692,
+                    "endColumn": 92,
+                    "endOffset": 14780
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 202,
+                    "startColumn": 4,
+                    "startOffset": 14785,
+                    "endColumn": 110,
+                    "endOffset": 14891
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 203,
+                    "startColumn": 4,
+                    "startOffset": 14896,
+                    "endColumn": 55,
+                    "endOffset": 14947
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 204,
+                    "startColumn": 4,
+                    "startOffset": 14952,
+                    "endLine": 205,
+                    "endColumn": 12,
+                    "endOffset": 15054
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 206,
+                    "startColumn": 4,
+                    "startOffset": 15059,
+                    "endLine": 209,
+                    "endColumn": 12,
+                    "endOffset": 15249
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 210,
+                    "startColumn": 4,
+                    "startOffset": 15254,
+                    "endLine": 211,
+                    "endColumn": 12,
+                    "endOffset": 15360
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 212,
+                    "startColumn": 4,
+                    "startOffset": 15365,
+                    "endLine": 213,
+                    "endColumn": 12,
+                    "endOffset": 15493
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 214,
+                    "startColumn": 4,
+                    "startOffset": 15498,
+                    "endColumn": 94,
+                    "endOffset": 15588
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 215,
+                    "startColumn": 4,
+                    "startOffset": 15593,
+                    "endColumn": 90,
+                    "endOffset": 15679
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 216,
+                    "startColumn": 4,
+                    "startOffset": 15684,
+                    "endColumn": 90,
+                    "endOffset": 15770
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 217,
+                    "startColumn": 4,
+                    "startOffset": 15775,
+                    "endColumn": 116,
+                    "endOffset": 15887
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 218,
+                    "startColumn": 4,
+                    "startOffset": 15892,
+                    "endLine": 219,
+                    "endColumn": 12,
+                    "endOffset": 16026
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 220,
+                    "startColumn": 4,
+                    "startOffset": 16031,
+                    "endLine": 226,
+                    "endColumn": 12,
+                    "endOffset": 16379
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 227,
+                    "startColumn": 4,
+                    "startOffset": 16384,
+                    "endLine": 233,
+                    "endColumn": 12,
+                    "endOffset": 16744
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 234,
+                    "startColumn": 4,
+                    "startOffset": 16749,
+                    "endLine": 243,
+                    "endColumn": 12,
+                    "endOffset": 17367
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 244,
+                    "startColumn": 4,
+                    "startOffset": 17372,
+                    "endColumn": 56,
+                    "endOffset": 17424
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 245,
+                    "startColumn": 4,
+                    "startOffset": 17429,
+                    "endColumn": 57,
+                    "endOffset": 17482
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            }
+        ]
+    }
+]

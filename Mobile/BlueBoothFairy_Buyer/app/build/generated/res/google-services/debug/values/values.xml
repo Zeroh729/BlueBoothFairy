@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">589111553844-o8r5hnkqkooalr8oisd6sg61ikgqmg8j.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://blue-booth-fairy.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">589111553844</string>
+    <string name="google_api_key" translatable="false">AIzaSyCb9o3QveSBP-WLPgDBUdYHR3v4I11zb5U</string>
+    <string name="google_app_id" translatable="false">1:589111553844:android:2b1787cf4e1f3c72</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCb9o3QveSBP-WLPgDBUdYHR3v4I11zb5U</string>
+    <string name="google_storage_bucket" translatable="false">blue-booth-fairy.appspot.com</string>
+</resources>

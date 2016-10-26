@@ -1,0 +1,7 @@
+-keep class android.zeroh729.com.blueboothfairy.exhibitor.App_ {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class android.zeroh729.com.blueboothfairy.exhibitor.ui.main.activities.MainActivity_ { <init>(); }
+-keep class android.zeroh729.com.blueboothfairy.exhibitor.ui.main.activities.LoginActivity_ { <init>(); }
+-keep class android.zeroh729.com.blueboothfairy.exhibitor.utils.receivers.NetworkChangeReceiver_ { <init>(); }
