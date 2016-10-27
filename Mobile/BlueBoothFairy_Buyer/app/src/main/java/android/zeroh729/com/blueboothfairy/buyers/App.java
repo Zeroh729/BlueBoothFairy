@@ -20,7 +20,7 @@ public class App extends Application{
         super.onCreate();
         context = getApplicationContext();
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/FinenessProRegular.otf")
+                .setDefaultFontPath("assets/fonts/FinenessProRegular.otf")
                 .setFontAttrId(R.attr.fontPath)
                 .build());
         backgroundPowerSaver = new BackgroundPowerSaver(this);

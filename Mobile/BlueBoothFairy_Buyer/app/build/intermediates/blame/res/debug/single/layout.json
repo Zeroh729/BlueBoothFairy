@@ -84,10 +84,6 @@
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\layout\\design_navigation_item_header.xml"
     },
@@ -126,6 +122,10 @@
     {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_allexhibitors.xml",
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\layout\\activity_allexhibitors.xml"
+    },
+    {
+        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_checkbox.xml",
+        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\layout\\view_checkbox.xml"
     },
     {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
@@ -180,12 +180,12 @@
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar_allexhibitors.xml",
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\layout\\toolbar_allexhibitors.xml"
+    },
+    {
+        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_boothnearby.xml",
@@ -200,12 +200,12 @@
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
-        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\layout\\design_layout_snackbar.xml"
-    },
-    {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\layout\\design_layout_snackbar.xml"
     },
     {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",

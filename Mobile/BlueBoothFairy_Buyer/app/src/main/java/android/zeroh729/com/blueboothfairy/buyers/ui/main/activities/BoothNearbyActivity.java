@@ -4,8 +4,10 @@ import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -17,6 +19,7 @@ import android.zeroh729.com.blueboothfairy.buyers.data.events.ExhibitorUpdateEve
 import android.zeroh729.com.blueboothfairy.buyers.data.model.Exhibitor;
 import android.zeroh729.com.blueboothfairy.buyers.presenters.BoothNearbyPresenter;
 import android.zeroh729.com.blueboothfairy.buyers.ui.base.BaseActivity;
+import android.zeroh729.com.blueboothfairy.buyers.ui.main.views.PaddedCheckbox;
 import android.zeroh729.com.blueboothfairy.buyers.utils._;
 
 import com.bumptech.glide.Glide;
@@ -37,6 +40,9 @@ import static android.zeroh729.com.blueboothfairy.buyers.data.values.Constants.R
 
 @EActivity(R.layout.activity_boothnearby)
 public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPresenter.BoothNearbyScreen {
+    @ViewById(R.id.parent_view)
+    ViewGroup parent_view;
+
     @ViewById(R.id.iv_header)
     ImageView iv_header;
 
@@ -51,6 +57,9 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
 
     @ViewById(R.id.btn_savecontact)
     ImageButton btn_savecontact;
+
+    @ViewById(R.id.btn_givecard)
+    Button btn_givecard;
 
     @ViewById(R.id.rg_productlist)
     RadioGroup rg_productlist;
@@ -67,12 +76,16 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
     @Extra
     String exhibitorId;
 
+    private boolean isBluetoothDialogShowing;
+    private final String DISABLED_MESSAGE = "Business Card Sent";
+
     @AfterViews
-    void afterInject(){
+    void afterviews(){
         presenter.setup(this);
         if(exhibitorId != null){
             presenter.setExhibitorId(exhibitorId);
         }
+        isBluetoothDialogShowing = false;
     }
 
     @Override
@@ -98,6 +111,7 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
         if(resultCode != RESULT_OK){
             _.showToast("Try again! Turn on bluetooth");
         }
+        isBluetoothDialogShowing = false;
     }
 
     @Override
@@ -112,9 +126,26 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
         AllExhibitorsActivity_.intent(this).start();
     }
 
+    @Click(R.id.btn_allexhibitors_inverse)
+    public void onClickAllExhibitors2(){
+        AllExhibitorsActivity_.intent(this).start();
+    }
+
     @Override
     public void onClickTurnOnBluetooth() {
         presenter.onClickTurnOnBluetooth();
+    }
+
+    @Click(R.id.btn_givecard)
+    public void onClickGiveCard(){
+        ArrayList<String> products = new ArrayList<>();
+        for(int i = 0; i < rg_productlist.getChildCount(); i++) {
+            PaddedCheckbox cb = (PaddedCheckbox) rg_productlist.getChildAt(i);
+            if (cb.getCheckBox().isChecked()) {
+                products.add(cb.getCheckBox().getText().toString());
+            }
+        }
+        presenter.onClickGiveBusinessCard(products);
     }
 
     @Override
@@ -127,6 +158,7 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
     public void displayTurnOnBlueTooth() {
         Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
         startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+        isBluetoothDialogShowing = true;
     }
 
     @Override
@@ -143,17 +175,27 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
         tv_descripion.setText(exhibitor.getDescription());
         rg_productlist.removeAllViews();
         for(String product : exhibitor.getProducts()){
-            CheckBox cb = new CheckBox(this);
-
-            cb.setText(product);
+            PaddedCheckbox cb = new PaddedCheckbox(this);
+            cb.getCheckBox().setText(product);
             rg_productlist.addView(cb);
+            cb.getCheckBox().setEnabled(!exhibitor.isSubscribed());
+            cb.getCheckBox().setChecked(exhibitor.getSubscribedProducts().contains(product));
         }
         Glide.with(this).load(exhibitor.getImgUrl()).into(iv_header);
+        if(exhibitor.isSubscribed()){
+            btn_givecard.setEnabled(false);
+            btn_givecard.setText(DISABLED_MESSAGE);
+        }
     }
 
     @Override
     public void displaySuccessGiveBusinessCard() {
-        _.showToast("Your details has been sent!");
+        _.showSnack(parent_view, "Business card sent!");
+    }
+
+    @Override
+    public void displayCheckInScreen() {
+        CheckInActivity_.intent(this).start();
     }
 
     @Override
@@ -172,12 +214,36 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
     }
 
     @Override
+    public boolean isBluetoothDialogShowing() {
+        return isBluetoothDialogShowing;
+    }
+
+    @Override
+    public void enableGiveCardElements(boolean isEnabled) {
+        if(isEnabled){
+            btn_givecard.setText("Give Business Card");
+        }else{
+            btn_givecard.setText(DISABLED_MESSAGE);
+        }
+        btn_givecard.setEnabled(isEnabled);
+        for(int i = 0; i < rg_productlist.getChildCount(); i++) {
+            ((PaddedCheckbox) rg_productlist.getChildAt(i)).getCheckBox().setEnabled(isEnabled);
+        }
+    }
+
+    @Override
     public void setContactsSaved(boolean isContactSaved) {
         if(isContactSaved){
             btn_savecontact.setImageResource(R.drawable.btn_saved);
+            _.showSnack(parent_view, "Contact saved!");
         }else{
             btn_savecontact.setImageResource(R.drawable.btn_save);
         }
+    }
+
+    @Override
+    public void showMessage(String message) {
+        _.showToast(message);
     }
 
     @Override

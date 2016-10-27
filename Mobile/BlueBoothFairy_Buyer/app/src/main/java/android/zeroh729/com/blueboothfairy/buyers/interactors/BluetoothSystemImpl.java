@@ -3,9 +3,7 @@ package android.zeroh729.com.blueboothfairy.buyers.interactors;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
-import android.content.Intent;
 import android.os.RemoteException;
-import android.zeroh729.com.blueboothfairy.buyers.App;
 import android.zeroh729.com.blueboothfairy.buyers.App_;
 import android.zeroh729.com.blueboothfairy.buyers.interactors.interfaces.BluetoothSystem;
 import android.zeroh729.com.blueboothfairy.buyers.presenters.base.SingleCallback;
@@ -50,7 +48,7 @@ public class BluetoothSystemImpl implements BluetoothSystem {
     @Override
     public void listenToTransmissions(SingleDataCallback<String> singleDataCallback) {
         this.singleDataCallback = singleDataCallback;
-        singleDataCallback.run("exhibitor_3");
+        singleDataCallback.run("368dd40e-9b8a-11e6-9f33-a24fc0d9649c");
     }
 
     @Override

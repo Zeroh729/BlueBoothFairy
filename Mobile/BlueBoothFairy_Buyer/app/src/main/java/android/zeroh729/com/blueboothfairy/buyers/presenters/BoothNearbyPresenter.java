@@ -4,10 +4,8 @@ import android.zeroh729.com.blueboothfairy.buyers.data.events.BluetoothEvent;
 import android.zeroh729.com.blueboothfairy.buyers.data.model.ContactProfile;
 import android.zeroh729.com.blueboothfairy.buyers.data.model.Exhibitor;
 import android.zeroh729.com.blueboothfairy.buyers.interactors.BluetoothSystemImpl;
-import android.zeroh729.com.blueboothfairy.buyers.interactors.FirebaseInteractor;
+import android.zeroh729.com.blueboothfairy.buyers.interactors.BoothNearbySystemImpl;
 import android.zeroh729.com.blueboothfairy.buyers.interactors.PhoneContactsSystemImpl;
-import android.zeroh729.com.blueboothfairy.buyers.interactors.interfaces.BluetoothSystem;
-import android.zeroh729.com.blueboothfairy.buyers.interactors.interfaces.PhoneContactsSystem;
 import android.zeroh729.com.blueboothfairy.buyers.presenters.base.BasePresenter;
 import android.zeroh729.com.blueboothfairy.buyers.presenters.base.SingleCallback;
 import android.zeroh729.com.blueboothfairy.buyers.presenters.base.SingleDataCallback;
@@ -26,7 +24,7 @@ public class BoothNearbyPresenter implements BasePresenter{
     private BoothNearbyActivity screen;
 
     @Bean
-    FirebaseInteractor system;
+    BoothNearbySystemImpl system;
 
     @Bean
     BluetoothSystemImpl bluetoothSystem;
@@ -37,19 +35,23 @@ public class BoothNearbyPresenter implements BasePresenter{
     @Bean
     OttoBus bus;
 
-    public void setup(BoothNearbyActivity screen) {
+    public void setup(final BoothNearbyActivity screen) {
         this.screen = screen;
-        bluetoothSystem.bind(screen);
-        bluetoothSystem.listenToTransmissions(new SingleDataCallback<String>(){
-            @Override
-            public void run(String data) {
-                bus.post(new BluetoothEvent(data));
-            }
-        });
+        if(!screen.isDetailsLocked()) {
+            bluetoothSystem.bind(screen);
+            bluetoothSystem.listenToTransmissions(new SingleDataCallback<String>() {
+                @Override
+                public void run(String data) {
+                    bus.post(new BluetoothEvent(data));
+                }
+            });
+        }
     }
 
     public void unbindListeners(){
-        bluetoothSystem.unbind();
+        if(!screen.isDetailsLocked()) {
+            bluetoothSystem.unbind();
+        }
     }
 
     public void subscribeToBluetoothEvents(){
@@ -57,15 +59,19 @@ public class BoothNearbyPresenter implements BasePresenter{
     }
 
     public void setExhibitorId(String id){
-        system.setExhibitor(id);
-        updateState();
-        updateContactToggle();
+        if(id.equals("d18f5361-2726-4ac4-87c5-60673962321c") && !system.isFreebieClaimed()){
+            screen.displayCheckInScreen();
+        }else{
+            system.setExhibitor(id);
+            updateState();
+            updateContactToggle();
+        }
     }
 
     private void updateContactToggle() {
         if (system.getExhibitor() != null) {
-            String displayName = system.getExhibitor().getName();
-            screen.setContactsSaved(phoneContactsSystem.isContactSaved(displayName));
+            String number = system.getExhibitor().getMobile();
+            screen.setContactsSaved(phoneContactsSystem.isContactSaved(number));
         }
     }
 
@@ -91,16 +97,25 @@ public class BoothNearbyPresenter implements BasePresenter{
             case STATE_DETAILS_LOCKED:
             case STATE_BOOTH_NEARBY:
                 screen.hideEmptyExhibitor();
-                screen.displayExhibitor(system.getExhibitor());
+                if(system.getExhibitor() != null) {
+                    screen.displayExhibitor(system.getExhibitor());
+                }
                 break;
             case STATE_BLUETOOTH_OFF:
                 screen.hideEmptyExhibitor();
-                screen.displayTurnOnBlueTooth();
+                if(!screen.isBluetoothDialogShowing()){
+                    screen.displayTurnOnBlueTooth();
+                }
                 break;
         }
     }
 
     public void onClickGiveBusinessCard(ArrayList<String> products){
+        if(products.size() == 0){
+            screen.showMessage("Select at least 1 product.");
+            return;
+        }
+        screen.enableGiveCardElements(false);
         system.subscribeToExhibitor(products);
         screen.displaySuccessGiveBusinessCard();
     }
@@ -141,6 +156,8 @@ public class BoothNearbyPresenter implements BasePresenter{
         Exhibitor getExhibitor();
 
         void subscribeToExhibitor(ArrayList<String> products);
+
+        boolean isFreebieClaimed();
     }
 
     public interface BoothNearbyScreen extends BeaconConsumer{
@@ -160,12 +177,20 @@ public class BoothNearbyPresenter implements BasePresenter{
 
         void displaySuccessGiveBusinessCard();
 
+        void displayCheckInScreen();
+
         void hideEmptyExhibitor();
 
         void navigateToAllExhibitorsScreen();
 
         void setContactsSaved(boolean contactSaved);
 
+        void showMessage(String message);
+
         boolean isDetailsLocked();
+
+        boolean isBluetoothDialogShowing();
+
+        void enableGiveCardElements(boolean isEnabled);
     }
 }

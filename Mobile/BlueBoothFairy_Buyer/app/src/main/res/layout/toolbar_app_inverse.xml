@@ -14,7 +14,7 @@
         android:id="@+id/btn_allexhibitors_inverse"
         android:layout_width="42dp"
         android:layout_height="42dp"
-        android:padding="8dp"
+        android:padding="12dp"
         android:layout_marginLeft="8dp"
         android:layout_gravity="left"
         android:scaleType="fitXY"

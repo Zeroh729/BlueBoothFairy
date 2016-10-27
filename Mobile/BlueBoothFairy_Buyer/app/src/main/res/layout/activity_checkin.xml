@@ -57,8 +57,8 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         android:layout_marginBottom="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/btn_freebiesclaimed"
-        app:layout_constraintRight_toRightOf="@+id/btn_freebiesclaimed" />
+        app:layout_constraintLeft_toLeftOf="@+id/btn_claimfreebie"
+        app:layout_constraintRight_toRightOf="@+id/btn_claimfreebie" />
 
     <TextView
         android:text="you can only press this once"
@@ -72,14 +72,14 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/btn_freebiesclaimed"
+        app:layout_constraintBottom_toTopOf="@+id/btn_claimfreebie"
         android:layout_marginBottom="16dp" />
 
     <Button
         android:text="I have claimed my freebies"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_freebiesclaimed"
+        android:id="@+id/btn_claimfreebie"
         android:background="@drawable/btn_round"
         android:textSize="14sp"
         android:textColor="@color/textPrimary"

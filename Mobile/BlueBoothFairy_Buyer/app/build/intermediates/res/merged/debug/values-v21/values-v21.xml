@@ -244,4 +244,7 @@
     </style>
     <style name="Platform.ThemeOverlay.AppCompat.Dark"/>
     <style name="Platform.ThemeOverlay.AppCompat.Light"/>
+    <style name="checkbox_product" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlHighlight">@color/accent</item>
+    </style>
 </resources>

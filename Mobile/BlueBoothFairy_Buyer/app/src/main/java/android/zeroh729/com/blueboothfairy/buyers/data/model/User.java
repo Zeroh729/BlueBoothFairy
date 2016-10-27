@@ -2,12 +2,21 @@ package android.zeroh729.com.blueboothfairy.buyers.data.model;
 
 import org.androidannotations.annotations.EBean;
 
+import java.util.HashMap;
+
 @EBean(scope = EBean.Scope.Singleton)
 public class User {
-    private String id = "user0";
-    private String name = "Jerome";
-    private String contactNumber = "0916329092";
-    private String email = "jerome@yahoo.com";
+    private String id = "";
+    private String name = "";
+    private String contactNumber = "";
+    private String email = "";
+
+    public void setUser(User user){
+        this.id = user.getId();
+        this.name = user.getName();
+        this.contactNumber = user.getContactNumber();
+        this.email = user.getEmail();
+    }
 
     public String getId() {
         return id;
@@ -39,5 +48,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public HashMap toHash(){
+        HashMap map = new HashMap();
+        map.put("name", name);
+        map.put("contactno", contactNumber);
+        map.put("email", email);
+        return map;
     }
 }

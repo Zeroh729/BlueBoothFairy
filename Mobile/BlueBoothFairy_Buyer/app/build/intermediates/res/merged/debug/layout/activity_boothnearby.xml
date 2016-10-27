@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_view"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,6 +9,7 @@
 
     <include
         layout="@layout/toolbar_app"
+        android:id="@+id/toolbar_app"
         android:layout_height="wrap_content"
         android:layout_width="0dp"
         tools:layout_constraintTop_creator="1"
@@ -25,7 +27,7 @@
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_app"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_height="180dp"
@@ -46,9 +48,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="12dp"
-        android:textColor="@android:color/white"
-        android:background="@drawable/btn_round"
-        android:text="Give Calling Card"
+        android:textColor="@color/custom_button_textcolor"
+        android:background="@drawable/custom_button"
+        android:text="Give Business Card"
         android:textSize="18sp"
         android:id="@+id/btn_givecard"
         tools:layout_constraintRight_creator="1"
@@ -75,7 +77,7 @@
         android:layout_marginStart="16dp" />
 
     <TextView
-        android:text="TextView"
+        android:text=""
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/tv_descripion"
@@ -149,30 +151,6 @@
         android:layout_marginEnd="24dp"
         app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/rg_productlist" >
-        <CheckBox
-            android:id="@+id/rb_1"
-            android:text="Belgian Fudge 3 Step Jar Cake"
-            android:buttonTint="@color/accent"
-            android:checked="false"
-            style="@style/checkbox_product" />
-        <CheckBox
-            android:id="@+id/rb_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Red Velvet 3 Step Jar Cake"
-            android:layout_marginBottom="8dp"
-            android:buttonTint="@color/accent"
-            android:checked="false"
-            android:textSize="16sp" />
-        <CheckBox
-            android:id="@+id/rb_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Peanut Butter 3 Step Jar Cake"
-            android:layout_marginBottom="8dp"
-            android:buttonTint="@color/accent"
-            android:checked="false"
-            android:textSize="16sp" />
     </RadioGroup>
 
     <RelativeLayout
@@ -199,7 +177,17 @@
             android:src="@drawable/img_nonearby"
             android:id="@+id/imageView2" />
 
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="true"
+            android:layout_alignLeft="@+id/tv_searching"
+            android:layout_alignRight="@+id/tv_searching"
+            android:layout_below="@+id/tv_searching"/>
+
         <TextView
+            android:id="@+id/tv_searching"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/primary"
@@ -207,7 +195,7 @@
             android:layout_centerHorizontal="true"
             android:textSize="16dp"
             android:layout_marginTop="-10dp"
-            android:text="Scanning for Nearby exhibitions..."
+            android:text="Scanning for Nearby exhibitions"
             android:paddingLeft="28dp"
             android:paddingRight="28dp"
             android:gravity="center"/>

@@ -105,6 +105,7 @@ android/support/v4/view/ViewCompatMarshmallow.class
 android/support/v4/view/AbsSavedState.class
 android/support/design/widget/Snackbar$9.class
 org/androidannotations/annotations/res/StringArrayRes.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/BoothNearbyActivity_$4.class
 org/androidannotations/annotations/FragmentArg.class
 android/support/v4/app/FragmentState.class
 android/support/v7/graphics/drawable/DrawerArrowDrawable.class
@@ -114,6 +115,7 @@ com/google/firebase/iid/FirebaseInstanceIdReceiver.class
 android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/AllExhibitorsActivity.class
 com/bumptech/glide/load/model/GenericLoaderFactory.class
 android/support/v7/app/ActionBar$OnNavigationListener.class
+android/zeroh729/com/blueboothfairy/buyers/data/model/User.class
 android/support/v4/view/accessibility/AccessibilityNodeProviderCompat.class
 com/bumptech/glide/load/DecodeFormat.class
 android/support/v7/appcompat/R.class
@@ -130,6 +132,7 @@ org/androidannotations/annotations/res/ColorStateListRes.class
 org/androidannotations/annotations/res/DrawableRes.class
 android/support/design/widget/FloatingActionButton.class
 org/androidannotations/annotations/App.class
+android/zeroh729/com/blueboothfairy/buyers/interactors/BoothNearbySystemImpl_.class
 com/google/firebase/iid/zzd.class
 com/google/android/gms/measurement/AppMeasurementReceiver.class
 android/support/annotation/Nullable.class
@@ -198,7 +201,6 @@ org/androidannotations/annotations/InjectMenu.class
 android/zeroh729/com/blueboothfairy/buyers/presenters/BoothNearbyPresenter$BoothNearbySystem.class
 android/support/v4/media/VolumeProviderCompat$ControlType.class
 android/support/v4/view/ViewPropertyAnimatorListenerAdapter.class
-android/zeroh729/com/blueboothfairy/buyers/interactors/FirebaseInteractor_.class
 org/androidannotations/api/builder/IntentBuilder.class
 android/support/design/widget/Snackbar$5.class
 android/support/annotation/AnyRes.class
@@ -223,8 +225,10 @@ android/support/v4/view/animation/LookupTableInterpolator.class
 com/google/android/gms/measurement/AppMeasurement.class
 com/google/firebase/database/ThrowOnExtraProperties.class
 android/support/v7/appcompat/R$styleable.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/views/PaddedCheckbox.class
 android/support/v7/widget/Toolbar.class
 android/support/multidex/MultiDexApplication.class
+android/zeroh729/com/blueboothfairy/buyers/data/local/SharedPrefHelper.class
 org/androidannotations/annotations/sharedpreferences/DefaultFloat.class
 android/support/v4/app/FragmentManagerImpl$1.class
 com/bumptech/glide/load/model/stream/StreamByteArrayLoader.class
@@ -247,6 +251,7 @@ org/androidannotations/annotations/EIntentService.class
 org/altbeacon/beacon/Identifier.class
 android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/AllExhibitorsActivity_.class
 android/support/v4/view/ViewCompatJellybeanMr2.class
+android/zeroh729/com/blueboothfairy/buyers/presenters/RegisterPresenter.class
 android/support/design/widget/SwipeDismissBehavior.class
 org/androidannotations/annotations/PageScrolled.class
 com/google/android/gms/iid/zzb.class
@@ -364,6 +369,7 @@ org/androidannotations/annotations/FragmentByTag.class
 android/support/design/widget/ViewOffsetBehavior.class
 org/androidannotations/api/builder/ActivityStarter.class
 org/altbeacon/beacon/service/BeaconService.class
+android/zeroh729/com/blueboothfairy/buyers/presenters/RegisterPresenter$RegisterScreen.class
 org/androidannotations/annotations/res/StringRes.class
 android/support/v4/widget/SimpleCursorAdapter.class
 org/androidannotations/annotations/sharedpreferences/SharedPref$Scope.class
@@ -386,6 +392,7 @@ android/support/v4/view/ViewPropertyAnimatorCompat.class
 android/support/v4/view/ViewCompat$FocusRealDirection.class
 com/squareup/otto/Subscribe.class
 retrofit2/http/FormUrlEncoded.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/BoothNearbyActivity_$3.class
 android/zeroh729/com/blueboothfairy/buyers/presenters/BoothNearbyPresenter.class
 android/support/v7/widget/RecyclerView$SmoothScroller.class
 android/support/v4/view/ViewPager$PagerObserver.class
@@ -458,6 +465,7 @@ android/support/design/widget/Snackbar$6.class
 android/support/v4/media/session/PlaybackStateCompat$Actions.class
 android/support/v4/view/ViewCompat.class
 android/support/v4/widget/ExploreByTouchHelper.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/CheckInActivity_$1.class
 android/support/design/widget/TabLayout$TabGravity.class
 android/support/v4/util/SimpleArrayMap.class
 com/google/android/gms/common/annotation/KeepName.class
@@ -511,7 +519,6 @@ android/zeroh729/com/blueboothfairy/buyers/utils/OttoBus.class
 org/altbeacon/beacon/logging/LogManager.class
 android/support/v4/widget/EdgeEffectCompat.class
 android/support/v4/widget/MaterialProgressDrawable$Ring.class
-android/zeroh729/com/blueboothfairy/buyers/interactors/FirebaseInteractor.class
 org/androidannotations/annotations/Extra.class
 org/androidannotations/annotations/res/AnimationRes.class
 android/support/v4/app/SuperNotCalledException.class
@@ -541,6 +548,7 @@ com/google/firebase/iid/zzf.class
 android/support/v4/os/BuildCompat.class
 com/google/firebase/FirebaseApp.class
 org/androidannotations/api/builder/PostActivityStarter.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/RegisterActivity_$1.class
 android/support/v4/view/ViewPager$OnAdapterChangeListener.class
 android/support/v4/media/MediaMetadataCompat$LongKey.class
 android/support/v4/view/ViewPager$1.class
@@ -610,6 +618,7 @@ android/support/v4/app/BackStackState.class
 com/google/firebase/iid/zzg.class
 android/support/v4/view/accessibility/AccessibilityNodeInfoCompat.class
 android/support/v4/view/ViewPropertyAnimatorListener.class
+android/zeroh729/com/blueboothfairy/buyers/interactors/BoothNearbySystemImpl.class
 android/support/v4/media/session/MediaSessionCompat$SessionFlags.class
 org/altbeacon/bluetooth/BluetoothCrashResolver.class
 android/support/v4/app/BaseFragmentActivityEclair.class

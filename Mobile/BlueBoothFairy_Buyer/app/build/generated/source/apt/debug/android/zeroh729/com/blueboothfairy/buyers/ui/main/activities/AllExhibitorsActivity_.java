@@ -19,7 +19,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.zeroh729.com.blueboothfairy.buyers.R;
 import android.zeroh729.com.blueboothfairy.buyers.data.events.ExhibitorUpdateEvent;
 import android.zeroh729.com.blueboothfairy.buyers.data.events.NetworkEvent;
-import android.zeroh729.com.blueboothfairy.buyers.interactors.FirebaseInteractor_;
+import android.zeroh729.com.blueboothfairy.buyers.interactors.BoothNearbySystemImpl_;
 import android.zeroh729.com.blueboothfairy.buyers.ui.main.adapters.BasicRowRecyclerAdapter_;
 import com.squareup.otto.Subscribe;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
@@ -46,7 +46,7 @@ public final class AllExhibitorsActivity_
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
         this.adapter = BasicRowRecyclerAdapter_.getInstance_(this);
-        this.firebaseInteractor = FirebaseInteractor_.getInstance_(this);
+        this.firebaseInteractor = BoothNearbySystemImpl_.getInstance_(this);
     }
 
     @Override

@@ -38,7 +38,7 @@ public abstract class BaseActivity extends AppCompatActivity{
         super.onStart();
         if(findViewById(R.id.toolbar) != null) {
             setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
-            getSupportActionBar();
+            getSupportActionBar().setTitle("");
         }
     }
 

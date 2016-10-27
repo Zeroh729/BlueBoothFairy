@@ -10,7 +10,7 @@ package android.zeroh729.com.blueboothfairy.buyers.presenters;
 
 import android.content.Context;
 import android.zeroh729.com.blueboothfairy.buyers.interactors.BluetoothSystemImpl_;
-import android.zeroh729.com.blueboothfairy.buyers.interactors.FirebaseInteractor_;
+import android.zeroh729.com.blueboothfairy.buyers.interactors.BoothNearbySystemImpl_;
 import android.zeroh729.com.blueboothfairy.buyers.interactors.PhoneContactsSystemImpl_;
 import android.zeroh729.com.blueboothfairy.buyers.utils.OttoBus_;
 
@@ -29,7 +29,7 @@ public final class BoothNearbyPresenter_
     }
 
     private void init_() {
-        this.system = FirebaseInteractor_.getInstance_(context_);
+        this.system = BoothNearbySystemImpl_.getInstance_(context_);
         this.bluetoothSystem = BluetoothSystemImpl_.getInstance_(context_);
         this.phoneContactsSystem = PhoneContactsSystemImpl_.getInstance_(context_);
         this.bus = OttoBus_.getInstance_(context_);

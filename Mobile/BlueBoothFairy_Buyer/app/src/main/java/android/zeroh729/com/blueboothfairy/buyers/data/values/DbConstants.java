@@ -2,6 +2,7 @@ package android.zeroh729.com.blueboothfairy.buyers.data.values;
 
 public class DbConstants {
     public static final String CHILD_EXHIBITORS = "exhibitors";
+    public static final String CHILD_BUYERS = "buyers";
 
     public static final String FIELD_ADDRESS = "address";
     public static final String FIELD_CONTACT_PERSON = "contact_person";
@@ -12,5 +13,5 @@ public class DbConstants {
     public static final String FIELD_MOBILE = "mobile";
     public static final String FIELD_NAME = "name";
     public static final String FIELD_PRODUCTS = "products";
-    public static final String FIELD_INTERESTED_BUYERS = "interestedBuyers";
+    public static final String FIELD_INTERESTED_BUYERS = "interested_buyers";
 }

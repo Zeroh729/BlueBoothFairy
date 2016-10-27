@@ -28,7 +28,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/textPrimary"
         app:layout_constraintBottom_toTopOf="@+id/et_name"
-        app:layout_constraintLeft_toLeftOf="@+id/button3" />
+        app:layout_constraintLeft_toLeftOf="@+id/btn_signup" />
 
     <TextView
         android:text="Email"
@@ -39,7 +39,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/textPrimary"
         app:layout_constraintBottom_toTopOf="@+id/et_email"
-        app:layout_constraintLeft_toLeftOf="@+id/button3" />
+        app:layout_constraintLeft_toLeftOf="@+id/btn_signup" />
 
     <TextView
         android:text="Contact No."
@@ -50,7 +50,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/textPrimary"
         app:layout_constraintBottom_toTopOf="@+id/et_contactno"
-        app:layout_constraintLeft_toLeftOf="@+id/button3" />
+        app:layout_constraintLeft_toLeftOf="@+id/btn_signup" />
 
     <EditText
         android:layout_height="wrap_content"
@@ -59,18 +59,18 @@
         android:id="@+id/et_name"
         android:layout_width="0dp"
         android:textColor="@android:color/white"
-        app:layout_constraintLeft_toLeftOf="@+id/button3"
-        app:layout_constraintRight_toRightOf="@+id/button3"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_signup"
+        app:layout_constraintRight_toRightOf="@+id/btn_signup"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         android:layout_marginBottom="8dp" />
     <EditText
         android:layout_height="wrap_content"
         android:ems="10"
         android:id="@+id/et_email"
-        app:layout_constraintLeft_toLeftOf="@+id/button3"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_signup"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         android:layout_width="0dp"
-        app:layout_constraintRight_toRightOf="@+id/button3"
+        app:layout_constraintRight_toRightOf="@+id/btn_signup"
         android:inputType="textEmailAddress"
         android:textColor="@android:color/white"
         android:layout_marginBottom="8dp" />
@@ -80,18 +80,18 @@
         android:inputType="textPersonName|phone"
         android:ems="10"
         android:id="@+id/et_contactno"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signup"
         android:layout_marginBottom="32dp"
-        app:layout_constraintLeft_toLeftOf="@+id/button3"
-        app:layout_constraintRight_toRightOf="@+id/button3"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_signup"
+        app:layout_constraintRight_toRightOf="@+id/btn_signup"
         android:textColor="@android:color/white" />
 
     <Button
         android:text="Sign In"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:background="@drawable/btn_round"
+        android:id="@+id/btn_signup"
+        android:background="@drawable/custom_button"
         android:textColor="@color/textPrimary"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"

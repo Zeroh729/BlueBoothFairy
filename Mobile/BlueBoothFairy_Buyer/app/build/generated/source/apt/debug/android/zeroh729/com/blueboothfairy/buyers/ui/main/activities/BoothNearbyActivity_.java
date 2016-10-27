@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
@@ -87,14 +88,17 @@ public final class BoothNearbyActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
+        this.parent_view = ((ViewGroup) hasViews.findViewById(R.id.parent_view));
         this.iv_header = ((ImageView) hasViews.findViewById(R.id.iv_header));
         this.tv_descripion = ((TextView) hasViews.findViewById(R.id.tv_descripion));
         this.tv_exhibitorname = ((TextView) hasViews.findViewById(R.id.tv_exhibitorname));
         this.tv_contactdetails = ((TextView) hasViews.findViewById(R.id.tv_contactdetails));
         this.btn_savecontact = ((ImageButton) hasViews.findViewById(R.id.btn_savecontact));
+        this.btn_givecard = ((Button) hasViews.findViewById(R.id.btn_givecard));
         this.rg_productlist = ((RadioGroup) hasViews.findViewById(R.id.rg_productlist));
         this.layout_empty = ((ViewGroup) hasViews.findViewById(R.id.layout_empty));
         View view_btn_allexhibitors = hasViews.findViewById(R.id.btn_allexhibitors);
+        View view_btn_allexhibitors_inverse = hasViews.findViewById(R.id.btn_allexhibitors_inverse);
 
         if (view_btn_allexhibitors!= null) {
             view_btn_allexhibitors.setOnClickListener(new OnClickListener() {
@@ -102,6 +106,26 @@ public final class BoothNearbyActivity_
                 @Override
                 public void onClick(View view) {
                     BoothNearbyActivity_.this.onClickAllExhibitors();
+                }
+            }
+            );
+        }
+        if (view_btn_allexhibitors_inverse!= null) {
+            view_btn_allexhibitors_inverse.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    BoothNearbyActivity_.this.onClickAllExhibitors2();
+                }
+            }
+            );
+        }
+        if (this.btn_givecard!= null) {
+            this.btn_givecard.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    BoothNearbyActivity_.this.onClickGiveCard();
                 }
             }
             );
@@ -116,7 +140,7 @@ public final class BoothNearbyActivity_
             }
             );
         }
-        afterInject();
+        afterviews();
     }
 
     private void injectExtras_() {

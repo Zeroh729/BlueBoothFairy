@@ -20,20 +20,20 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".ui.main.activities.AllExhibitorsActivity_"
-            android:screenOrientation="portrait"
-            android:label="">
+            android:screenOrientation="portrait">
         </activity>
 
         <activity android:name=".ui.main.activities.BoothNearbyActivity_"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".ui.main.activities.RegisterActivity_"
+            android:noHistory="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-
-        <activity android:name=".ui.main.activities.RegisterActivity_"
-            android:screenOrientation="portrait">
         </activity>
 
         <activity android:name=".ui.main.activities.CheckInActivity_"

@@ -1,4 +1,4 @@
-package android.whitewidget.com.boilerplateandroid.data.local;
+package android.zeroh729.com.blueboothfairy.buyers.data.local;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class SharedPrefHelper {
     private static SharedPrefHelper instance;
-    private final String PREF_FILE_NAME = "android_boilerplate_pref_file";
+    private final String PREF_FILE_NAME = "blueboothfairy_prefs";
     private SharedPreferences prefs;
 
     private SharedPrefHelper (Context context) {

@@ -107,35 +107,35 @@ MERGED from [com.google.firebase:firebase-iid:9.6.1] D:\Source Codes\BlueBoothFa
 	android:name
 		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:15:9-29
 activity#android.zeroh729.com.blueboothfairy.buyers.ui.main.activities.AllExhibitorsActivity_
-ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:22:9-25:20
+ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:22:9-24:20
 	android:screenOrientation
 		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:23:13-49
-	android:label
-		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:24:13-29
 	android:name
 		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:22:19-76
 activity#android.zeroh729.com.blueboothfairy.buyers.ui.main.activities.BoothNearbyActivity_
-ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:27:9-33:20
+ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:26:9-28:20
 	android:screenOrientation
-		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:28:13-49
+		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:27:13-49
 	android:name
-		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:27:19-74
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:29:13-32:29
-action#android.intent.action.MAIN
-ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:30:17-68
-	android:name
-		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:30:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:31:17-76
-	android:name
-		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:26:19-74
 activity#android.zeroh729.com.blueboothfairy.buyers.ui.main.activities.RegisterActivity_
-ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:35:9-37:20
+ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:30:9-37:20
 	android:screenOrientation
-		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:36:13-49
+		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:32:13-49
+	android:noHistory
+		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:35:19-71
+		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:30:19-71
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:33:13-36:29
+action#android.intent.action.MAIN
+ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:34:17-68
+	android:name
+		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:35:17-76
+	android:name
+		ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:35:27-74
 activity#android.zeroh729.com.blueboothfairy.buyers.ui.main.activities.CheckInActivity_
 ADDED from D:\Source Codes\BlueBoothFairy\Mobile\BlueBoothFairy_Buyer\app\src\main\AndroidManifest.xml:39:9-41:20
 	android:screenOrientation

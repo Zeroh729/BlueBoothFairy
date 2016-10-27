@@ -24,15 +24,7 @@
                     "endOffset": 530
                 },
                 "from": {
-                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 57,
-                        "endLine": 8,
-                        "endColumn": 12,
-                        "endOffset": 469
-                    }
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\values-v21\\styles.xml"
                 }
             },
             {
@@ -1093,6 +1085,27 @@
                 },
                 "from": {
                     "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 246,
+                    "startColumn": 4,
+                    "startOffset": 17487,
+                    "endLine": 248,
+                    "endColumn": 12,
+                    "endOffset": 17658
+                },
+                "from": {
+                    "file": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 477,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 650
+                    }
                 }
             }
         ]

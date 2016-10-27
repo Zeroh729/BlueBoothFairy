@@ -1,24 +1,17 @@
 package android.zeroh729.com.blueboothfairy.buyers.ui.main.activities;
 
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.zeroh729.com.blueboothfairy.buyers.R;
 import android.zeroh729.com.blueboothfairy.buyers.data.events.ExhibitorUpdateEvent;
 import android.zeroh729.com.blueboothfairy.buyers.data.events.NetworkEvent;
-import android.zeroh729.com.blueboothfairy.buyers.data.model.Article;
 import android.zeroh729.com.blueboothfairy.buyers.data.model.Exhibitor;
 import android.zeroh729.com.blueboothfairy.buyers.data.model.Model;
-import android.zeroh729.com.blueboothfairy.buyers.data.model.Tag;
-import android.zeroh729.com.blueboothfairy.buyers.data.remote.BaseService;
-import android.zeroh729.com.blueboothfairy.buyers.interactors.FirebaseInteractor;
+import android.zeroh729.com.blueboothfairy.buyers.interactors.BoothNearbySystemImpl;
 import android.zeroh729.com.blueboothfairy.buyers.presenters.DataListPresenter;
 import android.zeroh729.com.blueboothfairy.buyers.ui.base.BaseActivity;
 import android.zeroh729.com.blueboothfairy.buyers.ui.base.BaseAdapterRecyclerView;
-import android.zeroh729.com.blueboothfairy.buyers.ui.main.adapters.BasicGridRecyclerAdapter;
 import android.zeroh729.com.blueboothfairy.buyers.ui.main.adapters.BasicRowRecyclerAdapter;
-import android.zeroh729.com.blueboothfairy.buyers.utils._;
 import android.widget.Toast;
 
 import com.squareup.otto.Subscribe;
@@ -27,7 +20,6 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 
 
@@ -41,7 +33,7 @@ public class AllExhibitorsActivity extends BaseActivity implements DataListPrese
     BasicRowRecyclerAdapter adapter;
 
     @Bean
-    FirebaseInteractor firebaseInteractor;
+    BoothNearbySystemImpl firebaseInteractor;
 
     @AfterViews
     public void afterViews(){

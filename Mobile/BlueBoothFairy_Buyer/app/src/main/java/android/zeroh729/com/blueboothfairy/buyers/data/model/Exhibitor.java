@@ -15,6 +15,8 @@ public class Exhibitor {
     private int imgRes;
     private String mobile;
     private ArrayList<String> products;
+    private ArrayList<String> subscribedProducts;
+    private boolean isSubscribed;
 
     public Exhibitor() {
         id = "";
@@ -29,6 +31,8 @@ public class Exhibitor {
         imgRes = 0;
         mobile = "";
         products = new ArrayList<>();
+        subscribedProducts = new ArrayList<>();
+        isSubscribed = false;
     }
 
     public String getId() {
@@ -125,5 +129,21 @@ public class Exhibitor {
 
     public void setProducts(ArrayList<String> products) {
         this.products = products;
+    }
+
+    public ArrayList<String> getSubscribedProducts() {
+        return subscribedProducts;
+    }
+
+    public void setSubscribedProducts(ArrayList<String> subscribedProducts) {
+        this.subscribedProducts = subscribedProducts;
+    }
+
+    public boolean isSubscribed() {
+        return isSubscribed;
+    }
+
+    public void setSubscribed(boolean subscribed) {
+        isSubscribed = subscribed;
     }
 }
