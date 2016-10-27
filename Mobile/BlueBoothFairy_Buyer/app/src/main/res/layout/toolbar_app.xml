@@ -32,11 +32,11 @@
 
     <ImageButton
         android:id="@+id/btn_allexhibitors"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:padding="4dp"
-        android:layout_marginRight="8dp"
-        android:layout_gravity="right"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="left"
         android:scaleType="fitXY"
         android:background="?selectableItemBackgroundBorderless"
         android:src="@drawable/ic_allexhibitors"/>

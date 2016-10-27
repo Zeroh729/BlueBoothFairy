@@ -10,7 +10,6 @@
         layout="@layout/toolbar_app"
         android:layout_height="wrap_content"
         android:layout_width="0dp"
-        android:id="@+id/include"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="parent"
@@ -176,9 +175,9 @@
             android:textSize="16sp" />
     </RadioGroup>
 
-    <FrameLayout
+    <RelativeLayout
         android:id="@+id/layout_empty"
-        android:background="@color/primary"
+        android:background="@drawable/bg_buyer_nonearby"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -186,16 +185,47 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:elevation="10dp">
+
+        <include
+            android:id="@+id/toolbar_inverse"
+            layout="@layout/toolbar_app_inverse"/>
+
+        <ImageView
+            android:layout_below="@+id/toolbar_inverse"
+            android:layout_marginTop="-40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_nonearby"
+            android:id="@+id/imageView2" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Approach a booth nearby to get its details right away!"
+            android:textColor="@color/primary"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            android:layout_marginTop="-10dp"
+            android:text="Scanning for Nearby exhibitions..."
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approach an exhibit to see their details here."
             android:layout_gravity="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textSize="24sp"
             android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             android:gravity="center_horizontal"
-            android:padding="28dp" />
-    </FrameLayout>
+            android:layout_marginBottom="42dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp" />
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -41,13 +41,20 @@
         </activity>
         <activity
             android:name="android.zeroh729.com.blueboothfairy.buyers.ui.main.activities.BoothNearbyActivity_"
-            android:label=""
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="android.zeroh729.com.blueboothfairy.buyers.ui.main.activities.RegisterActivity_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="android.zeroh729.com.blueboothfairy.buyers.ui.main.activities.CheckInActivity_"
+            android:screenOrientation="portrait" >
         </activity>
 
         <receiver android:name="android.zeroh729.com.blueboothfairy.buyers.utils.receivers.NetworkChangeReceiver_" >

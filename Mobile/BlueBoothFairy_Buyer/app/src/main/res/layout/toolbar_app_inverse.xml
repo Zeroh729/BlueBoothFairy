@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_inverse"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/AppTheme.OverflowMenu"
+    android:background="#fff">
+
+    <ImageButton
+        android:id="@+id/btn_allexhibitors_inverse"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="left"
+        android:scaleType="fitXY"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_allexhibitors_blue"/>
+
+</android.support.v7.widget.Toolbar>

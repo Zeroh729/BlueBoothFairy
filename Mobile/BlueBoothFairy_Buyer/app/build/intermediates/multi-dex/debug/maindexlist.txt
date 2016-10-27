@@ -16,6 +16,7 @@ com/bumptech/glide/DownloadOptions.class
 com/google/firebase/FirebaseException.class
 android/support/v4/view/NestedScrollingParent.class
 android/support/v4/view/MenuCompat.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/CheckInActivity_.class
 android/support/v4/media/session/MediaControllerCompat.class
 com/google/gson/JsonNull.class
 android/support/v4/app/Fragment$SavedState.class
@@ -176,6 +177,7 @@ org/androidannotations/annotations/ItemLongClick.class
 android/support/annotation/TransitionRes.class
 android/support/annotation/MainThread.class
 android/support/v4/os/UserManagerCompat.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/CheckInActivity.class
 android/support/design/widget/AppBarLayout$1.class
 android/support/annotation/MenuRes.class
 org/altbeacon/beacon/startup/StartupBroadcastReceiver.class
@@ -445,6 +447,7 @@ org/androidannotations/annotations/WindowFeature.class
 com/google/android/gms/measurement/internal/zzae.class
 android/support/v4/media/MediaMetadataCompat$1.class
 org/androidannotations/annotations/EBean.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/CheckInActivity_$IntentBuilder_.class
 com/google/android/gms/common/zzc.class
 org/altbeacon/beacon/RangeNotifier.class
 org/androidannotations/annotations/EFragment.class
@@ -489,6 +492,7 @@ android/support/v7/app/ActionBar$NavigationMode.class
 android/support/v7/view/ActionMode.class
 android/support/v4/app/BaseFragmentActivityHoneycomb.class
 org/androidannotations/annotations/AfterViews.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/RegisterActivity_$IntentBuilder_.class
 org/androidannotations/api/view/OnViewChangedListener.class
 android/support/v4/app/ActivityCompatApi23$RequestPermissionsRequestCodeValidator.class
 android/support/design/widget/Snackbar$8.class
@@ -634,6 +638,8 @@ android/support/annotation/FractionRes.class
 android/support/v4/app/BackStackRecord$TransitionState.class
 android/support/annotation/PluralsRes.class
 android/support/v4/app/FragmentActivity$1.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/RegisterActivity.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/RegisterActivity_.class
 android/zeroh729/com/blueboothfairy/buyers/ui/base/BaseAdapterRecyclerView.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImpl.class
 android/support/v4/widget/SwipeRefreshLayout.class

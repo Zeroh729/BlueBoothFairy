@@ -26,6 +26,14 @@
     <init>();
 }
 
+-keep class android.zeroh729.com.blueboothfairy.buyers.ui.main.activities.RegisterActivity_ {
+    <init>();
+}
+
+-keep class android.zeroh729.com.blueboothfairy.buyers.ui.main.activities.CheckInActivity_ {
+    <init>();
+}
+
 -keep class android.zeroh729.com.blueboothfairy.buyers.utils.receivers.NetworkChangeReceiver_ {
     <init>();
 }
