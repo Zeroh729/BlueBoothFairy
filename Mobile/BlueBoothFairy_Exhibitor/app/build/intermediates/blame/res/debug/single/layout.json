@@ -148,6 +148,10 @@
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_media.xml"
     },
     {
+        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar_allexhibitors.xml",
+        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\src\\main\\res\\layout\\toolbar_allexhibitors.xml"
+    },
+    {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.0\\res\\layout\\design_navigation_item_separator.xml"
     },

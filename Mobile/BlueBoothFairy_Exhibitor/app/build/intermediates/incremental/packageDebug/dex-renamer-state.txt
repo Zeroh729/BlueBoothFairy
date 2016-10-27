@@ -1,14 +1,17 @@
-#Mon Oct 24 01:28:07 SGT 2016
+#Thu Oct 27 13:14:55 SGT 2016
 file.2=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\com.android.support-support-v4-23.1.1_56c4823890782d8ae98bdb5bc0eacdb89b695d49\\classes.dex
 base.2=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\com.android.support-support-v4-23.1.1_56c4823890782d8ae98bdb5bc0eacdb89b695d49
 file.1=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.1.1_006ce85cced6eb823a57555fe4999c1641a59cea\\classes.dex
 base.1=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.1.1_006ce85cced6eb823a57555fe4999c1641a59cea
 file.0=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\glide-3.7.0_56487dcc601537ec955eea625d9774ba24b2cff3\\classes.dex
 base.0=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\glide-3.7.0_56487dcc601537ec955eea625d9774ba24b2cff3
+renamed.22=classes23.dex
 renamed.21=classes22.dex
 renamed.20=classes8.dex
+base.22=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 base.21=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\com.android.support-recyclerview-v7-23.0.0_b8fa972ac879ebd6791ac45ffc50d59c6f0ac6e7
 base.20=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\org.altbeacon-android-beacon-library-2.9.1_3eb5ec420961e50c20b2e60bbde938d7c49901d8
+file.22=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
 file.21=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\com.android.support-recyclerview-v7-23.0.0_b8fa972ac879ebd6791ac45ffc50d59c6f0ac6e7\\classes.dex
 file.20=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\org.altbeacon-android-beacon-library-2.9.1_3eb5ec420961e50c20b2e60bbde938d7c49901d8\\classes.dex
 renamed.9=classes10.dex

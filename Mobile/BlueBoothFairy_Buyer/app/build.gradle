@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+def AAVersion = '4.0.0'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    dexOptions {
+        preDexLibraries true
+        javaMaxHeapSize "3g"
+        incremental true
+        dexInProcess = true
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "android.zeroh729.com.blueboothfairy.buyers"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    final RETROFIT_VERSION = '2.1.0'
+    final SUPPORT_LIBRARY_VERSION = '23.0.0'
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    apt "org.androidannotations:otto:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+
+    compile "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:cardview-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+    compile "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup:otto:1.3.8'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta1'
+    compile 'com.google.firebase:firebase-database:9.6.1'
+    compile 'org.altbeacon:android-beacon-library:2+'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
+    testCompile 'org.powermock:powermock-module-junit4:1.6.2'
+    testCompile 'org.powermock:powermock-api-mockito:1.6.2'
+}
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        // replace with the current version of the Android plugin
+        classpath 'com.android.tools.build:gradle:2.2.0'
+        // replace with the current version of the android-apt plugin
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+}
+
+apt {
+    arguments {
+        androidManifestFile variant.outputs[0]?.processResources?.manifestFile
+    }
+}
+apply plugin: 'com.google.gms.google-services'
