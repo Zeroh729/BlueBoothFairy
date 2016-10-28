@@ -1,4 +1,4 @@
-#Fri Oct 28 18:49:04 SGT 2016
+#Sat Oct 29 06:55:08 SGT 2016
 file.9=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\com.android.support-appcompat-v7-24.2.1_18c219b4848f66b3ba9653cbdb8b789b182bcc52\\classes.dex
 base.10=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\com.android.support-support-core-utils-24.2.1_07a926803830dd64bb45adb0451d8ef55a2e535c
 file.8=D\:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Exhibitor\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-24.2.1_24f55128fa5ead348af23b81638e1acb94f3489d\\classes.dex

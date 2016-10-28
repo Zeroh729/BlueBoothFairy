@@ -39,11 +39,9 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.Extra;
 import org.androidannotations.annotations.OnActivityResult;
 import org.androidannotations.annotations.ViewById;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
-
-import static android.R.attr.id;
-import static android.zeroh729.com.blueboothfairy.buyers.R.id.tv_title;
 import static android.zeroh729.com.blueboothfairy.buyers.data.values.Constants.REQUEST_ENABLE_BT;
 
 @EActivity(R.layout.activity_boothnearby)
@@ -53,6 +51,12 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
 
     @ViewById(R.id.iv_header)
     ImageView iv_header;
+
+    @ViewById(R.id.pb_bluetooth)
+    ProgressBar pb_bluetooth;
+
+    @ViewById(R.id.tv_searching)
+    TextView tv_searching;
 
     @ViewById(R.id.tv_descripion)
     TextView tv_descripion;
@@ -109,6 +113,12 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        presenter.bindListeners();
+    }
+
     @AfterViews
     void afterviews(){
         if(isDetailsLocked()){
@@ -158,6 +168,11 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
 //        presenter.onListenToBluetoothStatus();
         if(resultCode != RESULT_OK){
             _.showToast("Try again! Turn on bluetooth");
+            pb_bluetooth.setVisibility(View.GONE);
+            tv_searching.setText("Please turn on bluetooth to get this working.");
+        }else{
+            pb_bluetooth.setVisibility(View.VISIBLE);
+            tv_searching.setText("Scanning for nearby exhibitors");
         }
         isBluetoothDialogShowing = false;
     }
@@ -281,7 +296,7 @@ public class BoothNearbyActivity extends BaseActivity implements BoothNearbyPres
 
     @Override
     public boolean isDetailsLocked() {
-        return isDetailsLocked || tv_title.getText().toString().isEmpty();
+        return isDetailsLocked;
     }
 
     @Override

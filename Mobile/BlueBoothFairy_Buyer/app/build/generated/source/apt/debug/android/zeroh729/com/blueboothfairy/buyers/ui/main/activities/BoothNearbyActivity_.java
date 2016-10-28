@@ -91,6 +91,8 @@ public final class BoothNearbyActivity_
     public void onViewChanged(HasViews hasViews) {
         this.parent_view = ((ViewGroup) hasViews.findViewById(R.id.parent_view));
         this.iv_header = ((ImageView) hasViews.findViewById(R.id.iv_header));
+        this.pb_bluetooth = ((ProgressBar) hasViews.findViewById(R.id.pb_bluetooth));
+        this.tv_searching = ((TextView) hasViews.findViewById(R.id.tv_searching));
         this.tv_descripion = ((TextView) hasViews.findViewById(R.id.tv_descripion));
         this.tv_exhibitorname = ((TextView) hasViews.findViewById(R.id.tv_exhibitorname));
         this.tv_contactdetails = ((TextView) hasViews.findViewById(R.id.tv_contactdetails));

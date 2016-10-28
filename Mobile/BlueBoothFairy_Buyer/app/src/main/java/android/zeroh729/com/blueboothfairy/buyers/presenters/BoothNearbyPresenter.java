@@ -40,13 +40,18 @@ public class BoothNearbyPresenter implements BasePresenter{
         if(screen.isDetailsLocked()) {
             system.setDetailsLocked(true);
         }else{
-            bluetoothSystem.bind(screen);
             bluetoothSystem.listenToTransmissions(new SingleDataCallback<String>() {
                 @Override
                 public void run(String data) {
                     bus.post(new BluetoothEvent(data));
                 }
             });
+        }
+    }
+
+    public void bindListeners(){
+        if(!screen.isDetailsLocked()) {
+            bluetoothSystem.bind(screen);
         }
     }
 
@@ -113,7 +118,7 @@ public class BoothNearbyPresenter implements BasePresenter{
                 }
                 break;
             case STATE_BLUETOOTH_OFF:
-                screen.hideEmptyExhibitor();
+                screen.displayEmptyExhibitor();
                 if(!screen.isBluetoothDialogShowing()){
                     screen.displayTurnOnBlueTooth();
                 }

@@ -51,6 +51,7 @@ public class RegisterActivity extends BaseActivity implements RegisterPresenter.
     @Override
     public void displayLoading() {
         btn_signup.setEnabled(false);
+        btn_signup.setText("Signing in...");
         et_name.setEnabled(false);
         et_email.setEnabled(false);
         et_contact.setEnabled(false);
@@ -59,6 +60,7 @@ public class RegisterActivity extends BaseActivity implements RegisterPresenter.
     @Override
     public void hideLoading() {
         btn_signup.setEnabled(true);
+        btn_signup.setText("Sign In");
         et_name.setEnabled(true);
         et_email.setEnabled(true);
         et_contact.setEnabled(true);

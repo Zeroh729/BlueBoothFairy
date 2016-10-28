@@ -36,16 +36,16 @@
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\drawable\\ic_arrowback.png"
     },
     {
+        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_button.xml",
+        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\drawable\\custom_button.xml"
+    },
+    {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\title_overlay.xml",
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\drawable\\title_overlay.xml"
     },
     {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\img_nonearby.png",
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\drawable\\img_nonearby.png"
-    },
-    {
-        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_button.xml",
-        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\drawable\\custom_button.xml"
     },
     {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
@@ -108,12 +108,12 @@
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_light.xml"
-    },
-    {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_reg.png",
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\drawable\\bg_reg.png"
+    },
+    {
+        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
@@ -136,12 +136,12 @@
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_round_disable.xml",
         "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\src\\main\\res\\drawable\\btn_round_disable.xml"
+    },
+    {
+        "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
         "merged": "D:\\Source Codes\\BlueBoothFairy\\Mobile\\BlueBoothFairy_Buyer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",

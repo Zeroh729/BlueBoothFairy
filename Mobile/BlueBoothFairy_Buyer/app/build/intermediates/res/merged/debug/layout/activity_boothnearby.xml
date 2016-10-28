@@ -202,6 +202,7 @@
             android:gravity="center"/>
 
         <ProgressBar
+            android:id="@+id/pb_bluetooth"
             android:layout_width="match_parent"
             android:layout_height="8dp"
             style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"

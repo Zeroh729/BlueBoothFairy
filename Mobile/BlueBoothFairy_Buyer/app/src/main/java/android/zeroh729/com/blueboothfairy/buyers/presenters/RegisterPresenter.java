@@ -39,11 +39,11 @@ public class RegisterPresenter implements BasePresenter {
         system.saveUser(user, new SingleDataCallback<String>() {
             @Override
             public void run(String error) {
-                screen.hideLoading();
                 if(error == null){
                     screen.navigateToMainActivity();
                     screen.showSuccess();
                 }else{
+                    screen.hideLoading();
                     screen.showError("Error: " + error);
                 }
             }
