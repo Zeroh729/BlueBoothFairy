@@ -148,7 +148,18 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
 <script>
-	var exhibitorId = "368dcfe0-9b8a-11e6-9f33-a24fc0d9649c";
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCAByGQq3JGgOioLLM2WGKnnLRVv829WwM",
+    authDomain: "blue-booth-fairy.firebaseapp.com",
+    databaseURL: "https://blue-booth-fairy.firebaseio.com",
+    storageBucket: "blue-booth-fairy.appspot.com",
+    messagingSenderId: "589111553844"
+  };
+  firebase.initializeApp(config);
+</script>
+<script>
+	var exhibitorId = "39ba5bbd-a13c-43a4-af62-b91218e79ce5";
 
 	var CBOX_ALLBUYERS = "CBOX_ALLBUYERS";
 	var CBOX_FAVEBUYERS = "CBOX_FAVEBUYERS";
@@ -160,41 +171,20 @@
 		"Peanut Butter 3 step Jar Cake"
 	];
 
-	var buyers = [
-		[false, "Kimmy", "kimmy@yahoo.com", "222-8080", "Red Velvet 3 step Jar Cake"],
-		[false, "Kaviar Drimms", "kaviay@yahoo.com", "(09)232-9900", "Red Velvet 3 step Jar Cake"],
-		[true, "Kim Kardashy", "kimkardashy@yahoo.com", "(63)286236", "Red Velvet 3 step Jar Cake<br>Belgian Fudge 3 step Jar Cake"],
-		[false, "Stewart Mittle", "stweut@yahoo.com", "99912226", "Belgian Fudge 3 step Jar Cake"],
-		[false, "Barnie-San", "barni@yahoo.com", "5513808", "Peanut Butter 3 step Jar Cake"],
-		[false, "Kimmy", "kimmy1@yahoo.com", "222-8080", "Red Velvet 3 step Jar Cake"],
-		[true, "Kaviar Drimms", "kavia1y@yahoo.com", "(09)232-9900", "Red Velvet 3 step Jar Cake"],
-		[false, "Kim Kardashy", "kimkardash1y@yahoo.com", "(63)286236", "Red Velvet 3 step Jar Cake<br>Belgian Fudge 3 step Jar Cake"],
-		[false, "Stewart Mittle", "s1tweut@yahoo.com", "99912226", "Belgian Fudge 3 step Jar Cake"],
-		[false, "Barnie-San", "esaa@yahoo.com", "5513808", "Peanut Butter 3 step Jar Cake"]
-	];
-
-	var database = firebase.database();
-		
-	var config = {
-	    apiKey: "AIzaSyCAByGQq3JGgOioLLM2WGKnnLRVv829WwM",
-	    authDomain: "blue-booth-fairy.firebaseapp.com",
-	    databaseURL: "https://blue-booth-fairy.firebaseio.com",
-	    storageBucket: "blue-booth-fairy.appspot.com",
-	    messagingSenderId: "589111553844"
-	};
-	firebase.initializeApp(config);
+	var buyers = [];
 
 	var checkboxHTML = "";
-	for(i = 0; i < products.length + 2; i++){
+	for(i = 0; i < products.length + 1; i++){
 		var value;
 		var label;
 		var id;
 
+		// if(i == products.length){
+		// 	value = CBOX_FAVEBUYERS;
+		// 	label = "All favorite buyers";
+		// 	id = "allfaves";
+		// }else 
 		if(i == products.length){
-			value = CBOX_FAVEBUYERS;
-			label = "All favorite buyers";
-			id = "allfaves";
-		}else if(i == products.length + 1){
 			value = CBOX_ALLBUYERS;
 			label = "All buyers";
 			id = "allbuyers";
@@ -208,25 +198,27 @@
 		checkboxHTML += html;
 	}
 
-	var tableHTML = "";
-	for(i = 0; i < buyers.length; i++){
-		var isFave = buyers[i][0];
-		var name = buyers[i][1];
-		var email = buyers[i][2];
-		var contact = buyers[i][3];
-		var products = buyers[i][4];
-		var active = "";
+	function updateBuyers(){
+		var tableHTML = "";
+		for(i = 0; i < buyers.length; i++){
+			var isFave = buyers[i][0];
+			var name = buyers[i][1];
+			var email = buyers[i][2];
+			var contact = buyers[i][3];
+			var products = buyers[i][4];
+			var active = "";
 
-		if(isFave){
-			active = " active";
+			if(isFave){
+				active = " active";
+			}
+
+			var html = "<tr><td id='star_"+i+"'><img class='img_fave"+ active +"'/></td><td>"+name+"</td><td>"+email+"</td><td>"+contact+"</td><td>"+products+"</td></tr>";
+			tableHTML += html;
 		}
-
-		var html = "<tr><td id='star_"+i+"'><img class='img_fave"+ active +"'/></td><td>"+name+"</td><td>"+email+"</td><td>"+contact+"</td><td>"+products+"</td></tr>";
-		tableHTML += html;
+		$('#buyer_table').html(tableHTML);
 	}
 
 	$('#buyer_checklist').html(checkboxHTML);
-	$('#buyer_table').html(tableHTML);
 
 	var recipientList = [];
 
@@ -329,7 +321,7 @@
 
 					if(id != "allfaves"){
 						var productIndex = parseInt(id);
-						var filter = products[productIndex][0];
+						var filter = products[productIndex];
 						for(i = 0; i < buyers.length; i++){
 							if(buyers[i][4].indexOf(filter) != -1){
 								if(email.indexOf(buyers[i][2]) == -1){
@@ -363,16 +355,32 @@
 	}
 
 	$("#btn_savenewsletter").click(function(){
+		 firebase.database().ref("/newsletter/newsletter_1/letters/"+exhibitorId).set($("#textarea_newsletter").val());
+
 		$("#alert_content").html("<div id='alert_savedsuccess' class='alert alert-success alert-dismissible fade in' role='alert'><button class='close' data-dismiss='alert'><span>x</span></button><strong>Saved!</strong> Your message will be sent to all your interested buyers through the weekly CITEM newsletter. This week's newsletter will be sent at October 29, 2016, 4:00PM</div>");
 		$("#btn_savenewsletter").removeClass("active");
 		$("#btn_savenewsletter").addClass("inactive");
 		$("#textarea_newsletter").attr("disabled", "disabled"); 
 	});
 
+	var tempMap = [];
+
 	$(document).ready(function () {
 		$(".toggle-btn a").on('click', function () {
 			$(this).toggleClass("active");
 			$(".sidebar").toggleClass("active-menu");
+		});
+
+		var ref = firebase.database().ref('exhibitors/' + exhibitorId +"/interested_buyers");
+		ref.on('child_added', function(data) {
+			if(data.key != "exhibitor_key"){
+				tempMap[data.key] = data.val();
+				firebase.database().ref('buyers/' + data.key).once('value').then(function(snapshot){
+					var buyer =  snapshot.val();
+					buyers.push([false, buyer.name, buyer.email, buyer.contactno, tempMap[snapshot.key]]);
+					updateBuyers();
+				});
+			}
 		});
 
 	});
