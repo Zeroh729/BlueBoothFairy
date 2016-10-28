@@ -11,6 +11,7 @@ import org.androidannotations.annotations.ViewById;
 
 @EActivity(R.layout.activity_checkin)
 public class CheckInActivity extends BaseActivity {
+    private static boolean isShowing = false;
 
     @Click(R.id.btn_claimfreebie)
     void onClickClaimFreebie(){
@@ -18,4 +19,19 @@ public class CheckInActivity extends BaseActivity {
         finish();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        isShowing = true;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        isShowing = false;
+    }
+
+    public static boolean isShowing() {
+        return isShowing;
+    }
 }

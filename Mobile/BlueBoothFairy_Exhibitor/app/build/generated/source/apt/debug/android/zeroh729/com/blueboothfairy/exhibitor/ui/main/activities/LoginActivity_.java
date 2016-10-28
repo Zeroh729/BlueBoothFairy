@@ -15,6 +15,7 @@ import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
 import android.zeroh729.com.blueboothfairy.exhibitor.R;
 import org.androidannotations.api.builder.ActivityIntentBuilder;
 import org.androidannotations.api.builder.PostActivityStarter;
@@ -73,10 +74,9 @@ public final class LoginActivity_
 
     @Override
     public void onViewChanged(HasViews hasViews) {
-        View view_btn_login = hasViews.findViewById(R.id.btn_login);
-
-        if (view_btn_login!= null) {
-            view_btn_login.setOnClickListener(new OnClickListener() {
+        this.btn_login = ((Button) hasViews.findViewById(R.id.btn_login));
+        if (this.btn_login!= null) {
+            this.btn_login.setOnClickListener(new OnClickListener() {
 
                 @Override
                 public void onClick(View view) {
@@ -85,6 +85,7 @@ public final class LoginActivity_
             }
             );
         }
+        afterviews();
     }
 
     public static class IntentBuilder_

@@ -37,7 +37,9 @@ public class BoothNearbyPresenter implements BasePresenter{
 
     public void setup(final BoothNearbyActivity screen) {
         this.screen = screen;
-        if(!screen.isDetailsLocked()) {
+        if(screen.isDetailsLocked()) {
+            system.setDetailsLocked(true);
+        }else{
             bluetoothSystem.bind(screen);
             bluetoothSystem.listenToTransmissions(new SingleDataCallback<String>() {
                 @Override
@@ -59,6 +61,15 @@ public class BoothNearbyPresenter implements BasePresenter{
     }
 
     public void setExhibitorId(String id){
+        if(screen.isDetailsLocked() && system.getExhibitor() != null){
+            if(!system.hasUpdatedOnce()){
+                updateState();
+                updateContactToggle();
+                system.setHasUpdatedOnce(true);
+            }
+            return;
+        }
+
         if(id.equals("d18f5361-2726-4ac4-87c5-60673962321c") && !system.isFreebieClaimed()){
             screen.displayCheckInScreen();
         }else{
@@ -129,21 +140,23 @@ public class BoothNearbyPresenter implements BasePresenter{
     }
 
     public void onClickSaveToContacts(){
-        Exhibitor exhibitor = system.getExhibitor();
-        ContactProfile contactProfile = new ContactProfile(exhibitor.getName(), exhibitor.getMobile());
-        contactProfile.address = exhibitor.getAddress();
-        contactProfile.email = exhibitor.getEmail();
-        contactProfile.phoneticName = exhibitor.getContact_person();
-        contactProfile.jobTitle = exhibitor.getContact_person_role();
-        contactProfile.website = exhibitor.getWebsite();
+        if(system.getExhibitor() != null) {
+            Exhibitor exhibitor = system.getExhibitor();
+            ContactProfile contactProfile = new ContactProfile(exhibitor.getName(), exhibitor.getMobile());
+            contactProfile.address = exhibitor.getAddress();
+            contactProfile.email = exhibitor.getEmail();
+            contactProfile.phoneticName = exhibitor.getContact_person();
+            contactProfile.jobTitle = exhibitor.getContact_person_role();
+            contactProfile.website = exhibitor.getWebsite();
 
-        phoneContactsSystem.saveToContacts(contactProfile, new SingleCallback(){
-            @Override
-            public void run() {
-                updateContactToggle();
-            }
-        });
-
+            phoneContactsSystem.saveToContacts(contactProfile, new SingleCallback() {
+                @Override
+                public void run() {
+                    updateContactToggle();
+                    screen.showSaveContactSuccess();
+                }
+            });
+        }
     }
 
     public void onListenToBluetoothStatus() {
@@ -182,6 +195,8 @@ public class BoothNearbyPresenter implements BasePresenter{
         void hideEmptyExhibitor();
 
         void navigateToAllExhibitorsScreen();
+
+        void showSaveContactSuccess();
 
         void setContactsSaved(boolean contactSaved);
 

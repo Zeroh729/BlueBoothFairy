@@ -23,7 +23,4 @@
         <item name="android:background">@color/divider</item>
     </style>
 
-    <style name="checkbox_product" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
-    </style>
-
 </resources>

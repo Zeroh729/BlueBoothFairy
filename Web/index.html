@@ -8,7 +8,7 @@
 </head>
 <body>
 <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
-	<a class="navbar-brand" href="#">Blue Booth Fairy</a>
+	<a class="navbar-brand" href="#"><img src="assets/logo_thumbnail.svg" style="width: 30px; height: 30px; margin-right: 12px; margin-top: -4px"/>Blue Booth Fairy</a>
 	<div id="navbar">
 		<button type="button" class="btn btn-sm btn-outline-secondary float-xs-right">logout</button>
 		<div class="toggle-btn">
@@ -22,7 +22,6 @@
 </nav>
 
 <div class="main-content">
-
 	<div class="col sidebar">
 		<div>
 			<div class="sidebar-header">
@@ -54,7 +53,34 @@
 	</div>
 
 	<div class="col content-container">
+
 		<div class="content">
+			<div id="alert_content">
+			</div>
+
+			<div class="card">
+				<div class="card-header section">
+					Automatic Newsletter
+					<div class="float-xs-right">40 minutes before email blast</div>
+				</div>
+				<div class="card-content section">
+					<div class="row">
+						<div class="col-md-8" style="margin-top: 12px">
+							<textarea id="textarea_newsletter" class="form-control" rows="4" placeholder="What's new with the company this week?"></textarea>
+						</div>
+						<div class="col-md-3" style="margin-top: 12px">
+							<a href="#">
+								<div class="circle-container">
+									<div id="btn_savenewsletter" class="circle inactive">
+										<img src="assets/ic_check.svg"/>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="card">
 				<div class="card-header section">
 					Reach out to your buyers
@@ -74,7 +100,7 @@
 								</div>
 								<a href="#">
 									<div class="circle-container">
-										<div id="btn_compose" class="circle">
+										<div id="btn_compose" class="circle inactive">
 											<img src="assets/ic_plane.svg"/>
 											<span>Create Mail</span>
 										</div>
@@ -120,7 +146,10 @@
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
 <script>
+	var exhibitorId = "368dcfe0-9b8a-11e6-9f33-a24fc0d9649c";
+
 	var CBOX_ALLBUYERS = "CBOX_ALLBUYERS";
 	var CBOX_FAVEBUYERS = "CBOX_FAVEBUYERS";
 	var fave_count = 0;
@@ -144,6 +173,17 @@
 		[false, "Barnie-San", "esaa@yahoo.com", "5513808", "Peanut Butter 3 step Jar Cake"]
 	];
 
+	var database = firebase.database();
+		
+	var config = {
+	    apiKey: "AIzaSyCAByGQq3JGgOioLLM2WGKnnLRVv829WwM",
+	    authDomain: "blue-booth-fairy.firebaseapp.com",
+	    databaseURL: "https://blue-booth-fairy.firebaseio.com",
+	    storageBucket: "blue-booth-fairy.appspot.com",
+	    messagingSenderId: "589111553844"
+	};
+	firebase.initializeApp(config);
+
 	var checkboxHTML = "";
 	for(i = 0; i < products.length + 2; i++){
 		var value;
@@ -164,7 +204,7 @@
 			id = i;
 		}
 
-		var html = '<label><input id=checkbox_'+ id +' class="box" type="checkbox" value="'+ value +'"><span>'+ label +'</span></label>';
+		var html = '<label><input id="checkbox_'+ id +'" class="box" type="checkbox" value="'+ value +'"><span>'+ label +'</span></label>';
 		checkboxHTML += html;
 	}
 
@@ -222,6 +262,14 @@
 		}
 
 		$('#num_recipients').html(getValue());
+
+		if(recipients > 0){
+			$('#btn_compose').removeClass('inactive');
+			$('#btn_compose').addClass('active');
+		}else{
+			$('#btn_compose').removeClass('active');
+			$('#btn_compose').addClass('inactive');
+		}
 	});
 
 	function checkAllBoxes(doCheck){
@@ -251,6 +299,7 @@
 				}
 			}
 		});
+		recipients = total;
 		return total;
 	}
 
@@ -299,13 +348,33 @@
 		return 3;
 	}
 
-</script>
-<script>
+	$("#textarea_newsletter").keyup(function(){
+		updateBtnSaveNewsletter($(this));
+	});
+
+	function updateBtnSaveNewsletter(v){
+		if(v.val() == ""){
+			$("#btn_savenewsletter").removeClass("active");
+			$("#btn_savenewsletter").addClass("inactive");
+		}else{
+			$("#btn_savenewsletter").removeClass("inactive");
+			$("#btn_savenewsletter").addClass("active");
+		}
+	}
+
+	$("#btn_savenewsletter").click(function(){
+		$("#alert_content").html("<div id='alert_savedsuccess' class='alert alert-success alert-dismissible fade in' role='alert'><button class='close' data-dismiss='alert'><span>x</span></button><strong>Saved!</strong> Your message will be sent to all your interested buyers through the weekly CITEM newsletter. This week's newsletter will be sent at October 29, 2016, 4:00PM</div>");
+		$("#btn_savenewsletter").removeClass("active");
+		$("#btn_savenewsletter").addClass("inactive");
+		$("#textarea_newsletter").attr("disabled", "disabled"); 
+	});
+
 	$(document).ready(function () {
 		$(".toggle-btn a").on('click', function () {
 			$(this).toggleClass("active");
 			$(".sidebar").toggleClass("active-menu");
 		});
+
 	});
 </script>
 </html>

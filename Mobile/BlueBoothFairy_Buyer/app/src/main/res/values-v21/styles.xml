@@ -7,9 +7,4 @@
         <item name="android:colorAccent">@color/accent</item>
         <item name="android:windowBackground">@color/windowBackground</item>
     </style>
-
-    <style name="checkbox_product" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
-        <item name="android:colorControlHighlight">@color/accent</item>
-    </style>
-
 </resources>

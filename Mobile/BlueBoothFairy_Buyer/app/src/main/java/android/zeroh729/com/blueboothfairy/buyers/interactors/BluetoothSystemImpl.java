@@ -18,6 +18,7 @@ import org.altbeacon.beacon.Region;
 import org.altbeacon.beacon.startup.BootstrapNotifier;
 import org.androidannotations.annotations.EBean;
 import org.androidannotations.annotations.RootContext;
+import org.androidannotations.annotations.UiThread;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -48,7 +49,6 @@ public class BluetoothSystemImpl implements BluetoothSystem {
     @Override
     public void listenToTransmissions(SingleDataCallback<String> singleDataCallback) {
         this.singleDataCallback = singleDataCallback;
-        singleDataCallback.run("368dd40e-9b8a-11e6-9f33-a24fc0d9649c");
     }
 
     @Override
@@ -74,7 +74,7 @@ public class BluetoothSystemImpl implements BluetoothSystem {
             @Override
             public void didEnterRegion(Region region) {
                 _.log("Entered! "+ region.getId1().toString());
-                //singleDataCallback
+                broadcastCallback(region.getId1().toString());
             }
 
             @Override
@@ -91,13 +91,35 @@ public class BluetoothSystemImpl implements BluetoothSystem {
             @Override
             public void didRangeBeaconsInRegion(Collection<Beacon> collection, Region region) {
                 ArrayList<Beacon> bacons = new ArrayList<Beacon>(collection);
-                if(!bacons.isEmpty())
+                if(!bacons.isEmpty()) {
                     _.log("ranging...! " + bacons.get(0).getId1() + " size: " + collection.size());
+                    broadcastCallback(bacons.get(0).getId1().toString());
+                    int position = 0;
+                    for (int i = 1; i < bacons.size(); i++) {
+                        if (bacons.get(i).getDistance() != -1) {
+                            if (bacons.get(position).getDistance() > bacons.get(i).getDistance()) {
+                                position = i;
+                            }
+                        }
+                    }
+                    _.log("Distance is " + bacons.get(position).getDistance());
+
+                    if(bacons.get(position).getDistance() < 2) {
+                        broadcastCallback(bacons.get(position).getId1().toString());
+                        return;
+                    }
+                }
+                broadcastCallback("");
             }
         });
         beaconManager.setForegroundScanPeriod(1000);
         try {
             beaconManager.startRangingBeaconsInRegion(new Region("myRangingUniqueId", null, null, null));
         } catch (RemoteException e) {    }
+    }
+
+    @UiThread
+    void broadcastCallback(String id){
+        singleDataCallback.run(id);
     }
 }

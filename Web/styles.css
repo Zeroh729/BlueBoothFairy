@@ -63,10 +63,53 @@ body{
     border-top: 0px;
 }
 
-#btn_compose{
-	background-color: #64dd17;
-	border-color: #64dd17; 
+
+#btn_savenewsletter.active{
+	background-color: #06d6a0;
+	border-color: #06d6a0; 
 	color: white;
+}
+
+#btn_savenewsletter.active img{
+	content:url('assets/ic_check.svg');
+}
+
+#btn_savenewsletter.inactive{
+	background-color: #E3E3E3;
+	border-color: #E3E3E3; 
+	color: white;
+} 
+
+#btn_savenewsletter.inactive img{
+	content:url('assets/ic_check_disabled.svg');
+} 
+
+
+#btn_savenewsletter img{
+	width: 40px;
+	height: 40px;
+	top: 15%;
+	position: relative;
+}
+
+#btn_compose.active{
+	background-color: #06d6a0;
+	border-color: #06d6a0; 
+	color: white;
+}
+
+#btn_compose.inactive{
+	background-color: #e3e3e3;
+	border-color: #e3e3e3; 
+	color: #C4C4C4;
+}
+
+#btn_compose.active img{
+	content:url('assets/ic_plane.svg');
+}
+
+#btn_compose.inactive img{
+	content:url('assets/ic_plane_disabled.svg');
 }
 
 #btn_compose img{

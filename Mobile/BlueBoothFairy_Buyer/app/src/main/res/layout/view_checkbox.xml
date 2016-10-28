@@ -13,7 +13,7 @@
         android:id="@+id/cb_checkbox"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        style="@style/checkbox_product"
+        android:buttonTint="@color/accent"
         android:paddingLeft="32dp"
         android:textSize="18dp"
         tools:text="Chocolates">

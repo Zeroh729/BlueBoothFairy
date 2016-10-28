@@ -15,9 +15,11 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.zeroh729.com.blueboothfairy.exhibitor.R;
 import android.zeroh729.com.blueboothfairy.exhibitor.data.events.NetworkEvent;
+import android.zeroh729.com.blueboothfairy.exhibitor.data.model.Exhibitor;
 import com.squareup.otto.Subscribe;
 import org.androidannotations.api.BackgroundExecutor;
 import org.androidannotations.api.UiThreadExecutor;
@@ -32,6 +34,7 @@ public final class MainActivity_
     implements HasViews, OnViewChangedListener
 {
     private final OnViewChangedNotifier onViewChangedNotifier_ = new OnViewChangedNotifier();
+    public final static String EXHIBITOR_EXTRA = "exhibitor";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,7 @@ public final class MainActivity_
 
     private void init_(Bundle savedInstanceState) {
         OnViewChangedNotifier.registerOnViewChangedListener(this);
+        injectExtras_();
     }
 
     @Override
@@ -80,7 +84,27 @@ public final class MainActivity_
     public void onViewChanged(HasViews hasViews) {
         this.ripple_bg = hasViews.findViewById(R.id.iv_ripple);
         this.tv_exhibitorname = ((TextView) hasViews.findViewById(R.id.tv_exhibitorname));
+        this.iv_image = ((ImageView) hasViews.findViewById(R.id.iv_image));
+        this.iv_image2 = ((ImageView) hasViews.findViewById(R.id.iv_image2));
+        this.tv_placeholder = ((TextView) hasViews.findViewById(R.id.tv_placeholder));
+        this.tv_status = ((TextView) hasViews.findViewById(R.id.tv_status));
+        this.tv_label = ((TextView) hasViews.findViewById(R.id.tv_label));
         afterViews();
+    }
+
+    private void injectExtras_() {
+        Bundle extras_ = getIntent().getExtras();
+        if (extras_!= null) {
+            if (extras_.containsKey(EXHIBITOR_EXTRA)) {
+                this.exhibitor = extras_.getParcelable(EXHIBITOR_EXTRA);
+            }
+        }
+    }
+
+    @Override
+    public void setIntent(Intent newIntent) {
+        super.setIntent(newIntent);
+        injectExtras_();
     }
 
     @Override
@@ -166,6 +190,17 @@ public final class MainActivity_
                 }
             }
             return new PostActivityStarter(context);
+        }
+
+        /**
+         * 
+         * @param exhibitor
+         *     the value for this extra
+         * @return
+         *     the IntentBuilder to chain calls
+         */
+        public MainActivity_.IntentBuilder_ exhibitor(Exhibitor exhibitor) {
+            return super.extra(EXHIBITOR_EXTRA, exhibitor);
         }
     }
 }

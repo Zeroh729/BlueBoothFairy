@@ -3,6 +3,8 @@ package android.zeroh729.com.blueboothfairy.exhibitor;
 import android.app.Application;
 import android.content.Context;
 
+import com.google.firebase.database.FirebaseDatabase;
+
 import org.altbeacon.beacon.powersave.BackgroundPowerSaver;
 import org.androidannotations.annotations.EApplication;
 
@@ -22,6 +24,7 @@ public class App extends Application{
                 .setFontAttrId(R.attr.fontPath)
                 .build());
         backgroundPowerSaver = new BackgroundPowerSaver(this);
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
     }
 
     public Context getContext(){

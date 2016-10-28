@@ -73,12 +73,12 @@
         app:layout_constraintRight_toRightOf="@+id/imageView" />
 
     <Button
-        android:text="Login"
+        android:text="Loading exhibitors..."
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="12dp"
-        android:textColor="@android:color/white"
-        android:background="@drawable/btn_round"
+        android:textColor="@color/custom_button_textcolor"
+        android:background="@drawable/custom_button"
         android:id="@+id/btn_login"
         app:layout_constraintRight_toRightOf="@+id/imageView"
         app:layout_constraintLeft_toLeftOf="@+id/imageView"

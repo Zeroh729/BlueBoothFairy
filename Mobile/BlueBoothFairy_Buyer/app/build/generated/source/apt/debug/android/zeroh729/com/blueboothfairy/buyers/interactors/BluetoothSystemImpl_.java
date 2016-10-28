@@ -9,6 +9,7 @@
 package android.zeroh729.com.blueboothfairy.buyers.interactors;
 
 import android.content.Context;
+import org.androidannotations.api.UiThreadExecutor;
 
 public final class BluetoothSystemImpl_
     extends BluetoothSystemImpl
@@ -32,5 +33,17 @@ public final class BluetoothSystemImpl_
     public void rebind(Context context) {
         context_ = context;
         init_();
+    }
+
+    @Override
+    void broadcastCallback(final String id) {
+        UiThreadExecutor.runTask("", new Runnable() {
+
+            @Override
+            public void run() {
+                BluetoothSystemImpl_.super.broadcastCallback(id);
+            }
+        }
+        , 0L);
     }
 }

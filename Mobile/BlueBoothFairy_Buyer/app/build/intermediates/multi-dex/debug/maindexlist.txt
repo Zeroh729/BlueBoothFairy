@@ -120,6 +120,7 @@ android/support/v4/view/accessibility/AccessibilityNodeProviderCompat.class
 com/bumptech/glide/load/DecodeFormat.class
 android/support/v7/appcompat/R.class
 android/support/v7/app/ActionBar$TabListener.class
+com/bumptech/glide/request/RequestListener.class
 com/google/firebase/iid/zzb.class
 android/support/v4/app/FragmentActivity$HostCallbacks.class
 android/support/v7/app/ActionBar$LayoutParams.class
@@ -502,6 +503,7 @@ android/support/v4/app/BaseFragmentActivityHoneycomb.class
 org/androidannotations/annotations/AfterViews.class
 android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/RegisterActivity_$IntentBuilder_.class
 org/androidannotations/api/view/OnViewChangedListener.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/BoothNearbyActivity_$5.class
 android/support/v4/app/ActivityCompatApi23$RequestPermissionsRequestCodeValidator.class
 android/support/design/widget/Snackbar$8.class
 org/androidannotations/annotations/UiThread.class
@@ -664,6 +666,7 @@ android/support/design/widget/AppBarLayout$Behavior$SavedState.class
 android/support/design/widget/AppBarLayout$Behavior.class
 android/support/v4/os/ResultReceiver.class
 android/support/annotation/UiThread.class
+android/zeroh729/com/blueboothfairy/buyers/ui/main/activities/BoothNearbyActivity$1.class
 org/altbeacon/beacon/BuildConfig.class
 retrofit2/http/Streaming.class
 android/support/v4/app/FragmentManagerImpl$FragmentTag.class

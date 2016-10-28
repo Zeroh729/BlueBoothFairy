@@ -1,5 +1,6 @@
 package android.zeroh729.com.blueboothfairy.buyers.interactors;
 
+import android.content.Context;
 import android.support.annotation.Nullable;
 import android.zeroh729.com.blueboothfairy.buyers.App;
 import android.zeroh729.com.blueboothfairy.buyers.App_;
@@ -31,15 +32,28 @@ public class BoothNearbySystemImpl implements BoothNearbyPresenter.BoothNearbySy
     private String exhibitorId;
     private Exhibitor selectedExhibitor;
     private SharedPrefHelper prefs;
+    private boolean isDetailsLocked;
+    private boolean hasUpdatedOnce;
 
     @Bean
     OttoBus bus;
 
-    public BoothNearbySystemImpl() {
+    public BoothNearbySystemImpl(Context context) {
+        init();
+    }
+
+    public void init(){
+        exhibitorId = "";
         ref = FirebaseDatabase.getInstance().getReference();
         prefs = SharedPrefHelper.getInstance(App_.getInstance().getContext());
         exhibitors = new ArrayList<>();
+        isDetailsLocked = false;
+        hasUpdatedOnce = false;
         fetchExhibitors();
+    }
+
+    public void setDetailsLocked(boolean detailsLocked) {
+        isDetailsLocked = detailsLocked;
     }
 
     private void fetchExhibitors(){
@@ -60,7 +74,7 @@ public class BoothNearbySystemImpl implements BoothNearbyPresenter.BoothNearbySy
             public void onChildRemoved(DataSnapshot dataSnapshot) {
                 for(Exhibitor exhibitor : exhibitors){
                     if(exhibitor.getId().equals(dataSnapshot.getKey())){
-                        updateExhibitors(getExhibitorFromDatasnapshot(dataSnapshot));
+                        exhibitors.remove(exhibitor);
                     }
                 }
             }
@@ -96,32 +110,66 @@ public class BoothNearbySystemImpl implements BoothNearbyPresenter.BoothNearbySy
     }
 
     public void updateExhibitors(Exhibitor exhibitor){
-        exhibitors.add(exhibitor);
-        bus.post(new ExhibitorUpdateEvent(exhibitor));
+        if(isExhibitorUnique(exhibitor)) {
+            exhibitors.add(exhibitor);
+        }
         if(selectedExhibitor == null) {
             setExhibitor(exhibitorId);
         }
+        bus.post(new ExhibitorUpdateEvent(exhibitor));
+    }
+
+    private boolean isExhibitorUnique(Exhibitor exhibitor){
+        for(Exhibitor e : exhibitors){
+            if(e.getId().equals(exhibitor.getId())){
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
     public void setExhibitor(String exhibitorId) {
+        if(exhibitorId == null){
+            exhibitorId = "";
+        }
+
+        if(!this.exhibitorId.isEmpty() && this.exhibitorId.equals(exhibitorId) && getExhibitor() != null) {
+            return;
+        }
+
         this.exhibitorId = exhibitorId;
-        for(Exhibitor exhibitor : exhibitors){
-            if(exhibitor.getId().equals(exhibitorId)){
-                selectedExhibitor = exhibitor;
-            }
+        if(exhibitorId.isEmpty() && !isDetailsLocked){
+            selectedExhibitor = null;
         }
     }
 
     @Override
     @Nullable
     public Exhibitor getExhibitor() {
-        return selectedExhibitor;
+        if(isDetailsLocked && selectedExhibitor != null){
+            return selectedExhibitor;
+        }
+        for(Exhibitor exhibitor : exhibitors){
+            if(exhibitor.getId().equals(exhibitorId)){
+                this.selectedExhibitor = exhibitor;
+                return selectedExhibitor;
+            }
+        }
+        return null;
     }
 
     @Override
     public void subscribeToExhibitor(ArrayList<String> products) {
         ref.child(DbConstants.CHILD_EXHIBITORS).child(selectedExhibitor.getId()).child(DbConstants.FIELD_INTERESTED_BUYERS).child(User_.getInstance_(App_.getInstance().getContext()).getId()).setValue(products);
+    }
+
+    public void setHasUpdatedOnce(boolean hasUpdatedOnce) {
+        this.hasUpdatedOnce = hasUpdatedOnce;
+    }
+
+    public boolean hasUpdatedOnce() {
+        return hasUpdatedOnce;
     }
 
     @Override

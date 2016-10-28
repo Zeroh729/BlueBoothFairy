@@ -88,6 +88,7 @@
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent">#f99411</color>
+    <color name="accent2">#06d6a0</color>
     <color name="accentDark">#ec8704</color>
     <color name="accentDark2">#c97507</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
@@ -1837,8 +1838,6 @@
     <style name="Widget.Design.TextInputLayout" parent="android:Widget">
         <item name="hintTextAppearance">@style/TextAppearance.Design.Hint</item>
         <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
-    </style>
-    <style name="checkbox_product" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
     </style>
     <style name="divider">
         <item name="android:layout_width">match_parent</item>

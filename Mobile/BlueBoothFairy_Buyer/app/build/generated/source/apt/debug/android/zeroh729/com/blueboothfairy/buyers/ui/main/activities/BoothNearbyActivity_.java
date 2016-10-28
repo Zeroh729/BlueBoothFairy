@@ -20,6 +20,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.zeroh729.com.blueboothfairy.buyers.R;
@@ -93,15 +94,18 @@ public final class BoothNearbyActivity_
         this.tv_descripion = ((TextView) hasViews.findViewById(R.id.tv_descripion));
         this.tv_exhibitorname = ((TextView) hasViews.findViewById(R.id.tv_exhibitorname));
         this.tv_contactdetails = ((TextView) hasViews.findViewById(R.id.tv_contactdetails));
+        this.tv_title = ((TextView) hasViews.findViewById(R.id.tv_title));
         this.btn_savecontact = ((ImageButton) hasViews.findViewById(R.id.btn_savecontact));
         this.btn_givecard = ((Button) hasViews.findViewById(R.id.btn_givecard));
+        this.btn_back = ((ImageButton) hasViews.findViewById(R.id.btn_back));
+        this.btn_allexhibitors = ((ImageButton) hasViews.findViewById(R.id.btn_allexhibitors));
         this.rg_productlist = ((RadioGroup) hasViews.findViewById(R.id.rg_productlist));
         this.layout_empty = ((ViewGroup) hasViews.findViewById(R.id.layout_empty));
-        View view_btn_allexhibitors = hasViews.findViewById(R.id.btn_allexhibitors);
+        this.progressbar = ((ProgressBar) hasViews.findViewById(R.id.progressbar));
         View view_btn_allexhibitors_inverse = hasViews.findViewById(R.id.btn_allexhibitors_inverse);
 
-        if (view_btn_allexhibitors!= null) {
-            view_btn_allexhibitors.setOnClickListener(new OnClickListener() {
+        if (this.btn_allexhibitors!= null) {
+            this.btn_allexhibitors.setOnClickListener(new OnClickListener() {
 
                 @Override
                 public void onClick(View view) {
@@ -116,6 +120,16 @@ public final class BoothNearbyActivity_
                 @Override
                 public void onClick(View view) {
                     BoothNearbyActivity_.this.onClickAllExhibitors2();
+                }
+            }
+            );
+        }
+        if (this.btn_back!= null) {
+            this.btn_back.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    BoothNearbyActivity_.this.onClickBack();
                 }
             }
             );

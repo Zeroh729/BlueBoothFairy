@@ -7,6 +7,7 @@ public class Constants {
     public static final String USER_NAME = "user_name";
     public static final String USER_EMAIL = "user_email";
     public static final String USER_CONTACTNO = "user_contactno";
+    public static final String IS_DETAILS_LOCKED = "is_details_locked";
 
     public static final int REQUEST_ENABLE_BT = 1001;
 }

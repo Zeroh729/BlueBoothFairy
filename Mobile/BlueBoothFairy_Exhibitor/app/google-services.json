@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "589111553844",
+    "firebase_url": "https://blue-booth-fairy.firebaseio.com",
+    "project_id": "blue-booth-fairy",
+    "storage_bucket": "blue-booth-fairy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589111553844:android:2b1787cf4e1f3c72",
+        "android_client_info": {
+          "package_name": "android.zeroh729.com.blueboothfairy.buyers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589111553844-o8r5hnkqkooalr8oisd6sg61ikgqmg8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb9o3QveSBP-WLPgDBUdYHR3v4I11zb5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589111553844:android:89f1667fcd2cad38",
+        "android_client_info": {
+          "package_name": "android.zeroh729.com.blueboothfairy.exhibitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589111553844-o8r5hnkqkooalr8oisd6sg61ikgqmg8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb9o3QveSBP-WLPgDBUdYHR3v4I11zb5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
