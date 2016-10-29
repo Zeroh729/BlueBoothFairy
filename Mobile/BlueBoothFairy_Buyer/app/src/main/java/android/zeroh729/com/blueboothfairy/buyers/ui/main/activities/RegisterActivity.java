@@ -4,6 +4,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.zeroh729.com.blueboothfairy.buyers.R;
 import android.zeroh729.com.blueboothfairy.buyers.data.model.User;
+import android.zeroh729.com.blueboothfairy.buyers.data.model.User_;
 import android.zeroh729.com.blueboothfairy.buyers.presenters.RegisterPresenter;
 import android.zeroh729.com.blueboothfairy.buyers.ui.base.BaseActivity;
 import android.zeroh729.com.blueboothfairy.buyers.utils._;
@@ -41,7 +42,7 @@ public class RegisterActivity extends BaseActivity implements RegisterPresenter.
 
     @Click(R.id.btn_signup)
     void onClickSignUp(){
-        User user = new User();
+        User user = User_.getInstance_(this);
         user.setEmail(et_email.getText().toString());
         user.setName(et_name.getText().toString());
         user.setContactNumber(et_contact.getText().toString());

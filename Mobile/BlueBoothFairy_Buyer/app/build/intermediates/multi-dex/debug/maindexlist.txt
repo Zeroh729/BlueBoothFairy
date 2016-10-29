@@ -5,6 +5,7 @@ android/support/v4/app/FragmentManagerImpl$AnimateOnHWLayerIfNeededListener.clas
 org/androidannotations/annotations/SupposeUiThread.class
 org/androidannotations/annotations/ItemClick.class
 android/support/annotation/VisibleForTesting.class
+android/zeroh729/com/blueboothfairy/buyers/data/model/User_.class
 android/support/design/widget/MathUtils.class
 android/support/design/widget/CoordinatorLayout$ApplyInsetsListener.class
 org/androidannotations/annotations/sharedpreferences/SharedPref.class
